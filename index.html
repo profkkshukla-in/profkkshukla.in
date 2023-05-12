@@ -1,1 +1,156 @@
-Site is ready
+<!doctype html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8"/>
+        <title>Dr. Kaushal Kumar Shukla </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+        
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+         <script src="js/html5shiv.js"></script>
+         <script src="js/respond.min.js"></script>
+         <![endif]-->
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- http://getbootstrap.com/customize/ change "@screen-sm" -> "@screen-md" in @grid-float-breakpoint -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/menucollapse.js"></script>
+        <script type="text/javascript" src="js/arrow78.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+    </head>
+    
+    <body id="page-top" class="index">
+        
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                    <button id="button2" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <span><a href="#"><img border="0" height="47" src="images/iitbhu.png"/></a></span>
+                </div>
+                
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                Home<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a onclick="javascript:reset_menus();$('#tab-intro-content').show();" href="#intro">Introduction</a></li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+                
+                <!-- search box submenu -->
+                <div class="collapse" id="bs-example-navbar-collapse-2">
+                    <gcse:search></gcse:search>
+                        </div>
+                
+            </div><!-- /.container-fluid -->
+        </nav>
+        
+        <section>
+            <!-- Place this tag where you want the search results to render -->
+            <gcse:searchresults-only></gcse:searchresults-only>
+                </section>
+        
+        <!-- Home Section -->
+        <section  name="home" id="home" style="margin-top:40px">
+            <div class="container">
+                <div align="left" class="col-md-3">
+                    <a target="_blank" href="images/kkshukla.jpg">
+                        <img id="mobile-img" src="images/kkshukla.small.jpg" width="200" border="0" height="250" alt=""></a>
+                </div>
+                <div align="left" class="col-md-9">
+                    <h2>Dr. Kaushal Kumar Shukla
+                        <h5><i>Ph.D.(BHU), M.Tech (Gold Medal) (BHU), B.E (FIRST CLASS FIRST)</i></h5>
+                    </h2>
+                    
+                    <h4>Professor<br>
+                        <a href="https://www.iitbhu.ac.in/dept/cse">Department of Computer Science and Engineering</a><br>
+                        <a href="https://www.iitbhu.ac.in/">Indian Institute of Technology (BHU) Varanasi</a><br>
+ 
+                        Tel/Fax: <a href="tel:00915427165313">+91-0542-716-5313</a> <br/>
+                        Email:
+                        <script language="JavaScript">
+                            <!--
+                            document.write("&nbsp;");
+                            spiderjam('kkshukla.cse','iitbhu.ac.in');
+                            -->
+                            </script>
+                    </h4>
+                    <h4><i>Area of Interest: Artificial Intelligence,Neural Networks,Data Science</i> <a href="#intro" onclick="javascript:reset_menus();$('#tab-intro-content').show();" class="btn-primary btn-xs">&raquo;</a><br></h4>
+
+                </div>
+                
+                
+                <!--<p><a href="#" class="btn btn-primary">More &raquo;</a></p>-->
+                <b class="expandshow" style="display:none;" id="tab-1">
+                    <button class="btn btn-primary btn-lg btn-block" style="width: 100%;" onclick="javascript:$('.allshow').show();$('.noshow').hide();$('.collapseshow').show();$('.expandshow').hide();">EXPAND ALL SECTIONS <span class="glyphicon glyphicon-chevron-down"></span></button>
+                </b>
+                <b class="collapseshow" style="display:none;" id="tab-1">
+                    <button class="btn btn-primary btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('.allshow').hide();$('.noshow').show();$('.expandshow').show();$('.collapseshow').hide();">COLLAPSE ALL SECTIONS <span class="glyphicon glyphicon-chevron-up"></span></button>
+                </b>
+                
+            </div>
+        </section>
+        
+        <!-- Home Section -->
+        <section name="intro" id="intro">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    <!--<h2>Welcome!</h2>-->
+                    
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-intro-content').toggle();">Introduction <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    
+                    <div class="allshow" style="display:none;" id="tab-intro-content">
+                        <hr class="star-primary">
+                        
+<p><strong>Academic Qualifications:&nbsp;</strong> Ph.D.(BHU), M.Tech (Gold Medal) (BHU), B.E (FIRST CLASS FIRST)</p>
+<p><strong>Industry Experience:&nbsp;</strong> &nbsp;8 years at<em> HAL</em>, India and <em>Smiths Aerospace</em>, U.K.</p>
+<p><strong>Academic Experience:&nbsp;</strong>Faculty in the CSE department, IT(BHU) / IIT(BHU) since 1990.</p>
+<p><strong>Subjects Taught:&nbsp; </strong>Information Security, Advanced Computer Networks, Computer Graphics, Graph Theory,&nbsp;<span style="font-size:10px;">and many more...</span></p>
+<p><strong>Intellectual Property Rights: </strong>24 IPRs (Web applications, e-learning resources and XML content in vernacular) (Transferred to the Ministry of Communication &amp; Information&nbsp; Technology, GoI)</p>
+<p>​<b>Patent Published:&nbsp;</b><em>&nbsp;A&nbsp;Device&nbsp;For&nbsp;Modeling&nbsp; Software Clone&nbsp;Evolution Across Different Versions And&nbsp;a&nbsp;Method&nbsp;Thereof.&nbsp;</em>(201811016656 A)</p>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+     
+        
+        <hr class="star-primary">
+         
+        
+    </body>
+    
+</html>
+
