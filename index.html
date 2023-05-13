@@ -1,156 +1,833 @@
 <!doctype html>
 <html lang="en">
-    
-    <head>
-        <meta charset="utf-8"/>
-        <title>Dr. Kaushal Kumar Shukla </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        
-        <!-- Font Awesome Icons -->
-        <link rel="stylesheet" href="css/font-awesome.min.css"/>
-        
-        <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel="stylesheet"/>
-        <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
-        
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-         <script src="js/html5shiv.js"></script>
-         <script src="js/respond.min.js"></script>
-         <![endif]-->
-        
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <!-- http://getbootstrap.com/customize/ change "@screen-sm" -> "@screen-md" in @grid-float-breakpoint -->
-        <script src="js/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/menucollapse.js"></script>
-        <script type="text/javascript" src="js/arrow78.js"></script>
-        <script type="text/javascript" src="js/custom.js"></script>
-    </head>
-    
-    <body id="page-top" class="index">
-        
-        <!-- Navigation -->
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="glyphicon glyphicon-search"></span>
-                    </button>
-                    <button id="button2" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <span><a href="#"><img border="0" height="47" src="images/iitbhu.png"/></a></span>
-                </div>
-                
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                Home<span class="caret"></span></a>
+   <head>
+      <meta charset="utf-8"/>
+      <title>Dr. Kaushal Kumar Shukla </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <!-- Font Awesome Icons -->
+      <link rel="stylesheet" href="css/font-awesome.min.css"/>
+      <!-- Bootstrap -->
+      <link href="css/bootstrap.min.css" rel="stylesheet"/>
+      <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+      <![endif]-->
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <!-- http://getbootstrap.com/customize/ change "@screen-sm" -> "@screen-md" in @grid-float-breakpoint -->
+      <script src="js/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/menucollapse.js"></script>
+      <script type="text/javascript" src="js/arrow78.js"></script>
+      <script type="text/javascript" src="js/custom.js"></script>
+   </head>
+   <body id="page-top" class="index">
+      <!-- Navigation -->
+      <nav class="navbar navbar-default navbar-fixed-top">
+         <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="glyphicon glyphicon-search"></span>
+               </button>
+               <button id="button2" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <span><a href="#"><img border="0" height="47" src="images/iitbhu.png"/></a></span>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav navbar-right">
+			   
+						<li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-intro-content').show();" href="#intro">Introduction</a>
+                        </li>
+						
+						<li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-research-content').show();" href="#research">Research</a>
+                        </li>			   
+                        
+						<li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                                Publications <span class="caret"></span></a>
+								
                             <ul class="dropdown-menu">
-                                <li><a onclick="javascript:reset_menus();$('#tab-intro-content').show();" href="#intro">Introduction</a></li>
+                                <li><a onclick="javascript:reset_menus();$('#tab-publications-content').show();" href="#books">Books</a></li>
+								<li><a onclick="javascript:reset_menus();$('#tab-publications-content').show();" href="#chapters">Chapters</a></li>
+                                <li><a onclick="javascript:reset_menus();$('#tab-publications-content').show();" href="#selected-papers">Selected Papers</a></li>
+                                <li><a onclick="javascript:reset_menus();$('#tab-publications-content').show();" href="#international-publications">International Publications</a></li>
+                                <li><a onclick="javascript:reset_menus();$('#tab-publications-content').show();" href="#national-publications">National Publications</a></li>
                             </ul>
                         </li>
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-sponsored-projects-content').show();" href="#sponsored-projects">Sponsored Projects</a>
+                        </li>
+                         
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-research-guidance-content').show();" href="#research-guidance">Research Guidance</a>
+                        </li>
+                         
                         
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-                
-                <!-- search box submenu -->
-                <div class="collapse" id="bs-example-navbar-collapse-2">
-                    <gcse:search></gcse:search>
-                        </div>
-                
-            </div><!-- /.container-fluid -->
-        </nav>
-        
-        <section>
-            <!-- Place this tag where you want the search results to render -->
-            <gcse:searchresults-only></gcse:searchresults-only>
-                </section>
-        
-        <!-- Home Section -->
-        <section  name="home" id="home" style="margin-top:40px">
-            <div class="container">
-                <div align="left" class="col-md-3">
-                    <a target="_blank" href="images/kkshukla.jpg">
-                        <img id="mobile-img" src="images/kkshukla.small.jpg" width="200" border="0" height="250" alt=""></a>
-                </div>
-                <div align="left" class="col-md-9">
-                    <h2>Dr. Kaushal Kumar Shukla
-                        <h5><i>Ph.D.(BHU), M.Tech (Gold Medal) (BHU), B.E (FIRST CLASS FIRST)</i></h5>
-                    </h2>
-                    
-                    <h4>Professor<br>
-                        <a href="https://www.iitbhu.ac.in/dept/cse">Department of Computer Science and Engineering</a><br>
-                        <a href="https://www.iitbhu.ac.in/">Indian Institute of Technology (BHU) Varanasi</a><br>
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-administration-content').show();" href="#administration">Administration</a>
+                        </li>
  
-                        Tel/Fax: <a href="tel:00915427165313">+91-0542-716-5313</a> <br/>
-                        Email:
-                        <script language="JavaScript">
-                            <!--
-                            document.write("&nbsp;");
-                            spiderjam('kkshukla.cse','iitbhu.ac.in');
-                            -->
-                            </script>
-                    </h4>
-                    <h4><i>Area of Interest: Artificial Intelligence,Neural Networks,Data Science</i> <a href="#intro" onclick="javascript:reset_menus();$('#tab-intro-content').show();" class="btn-primary btn-xs">&raquo;</a><br></h4>
-
-                </div>
-                
-                
-                <!--<p><a href="#" class="btn btn-primary">More &raquo;</a></p>-->
-                <b class="expandshow" style="display:none;" id="tab-1">
-                    <button class="btn btn-primary btn-lg btn-block" style="width: 100%;" onclick="javascript:$('.allshow').show();$('.noshow').hide();$('.collapseshow').show();$('.expandshow').hide();">EXPAND ALL SECTIONS <span class="glyphicon glyphicon-chevron-down"></span></button>
-                </b>
-                <b class="collapseshow" style="display:none;" id="tab-1">
-                    <button class="btn btn-primary btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('.allshow').hide();$('.noshow').show();$('.expandshow').show();$('.collapseshow').hide();">COLLAPSE ALL SECTIONS <span class="glyphicon glyphicon-chevron-up"></span></button>
-                </b>
-                
+						<li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-awards-content').show();" href="#awards">Awards</a>
+                        </li>
+                    </ul>
             </div>
-        </section>
-        
-        <!-- Home Section -->
-        <section name="intro" id="intro">
-            <div class="container lead">
-                <div style="text-align: left; margin-top:10px" class="col-md-12">
-                    <!--<h2>Welcome!</h2>-->
-                    
-                    <b class="noshow" style="display:none;" id="tab-1">
-                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-intro-content').toggle();">Introduction <span class="glyphicon glyphicon-chevron-down"></span></button>
-                    </b>
-                    
-                    <div class="allshow" style="display:none;" id="tab-intro-content">
-                        <hr class="star-primary">
-                        
-<p><strong>Academic Qualifications:&nbsp;</strong> Ph.D.(BHU), M.Tech (Gold Medal) (BHU), B.E (FIRST CLASS FIRST)</p>
-<p><strong>Industry Experience:&nbsp;</strong> &nbsp;8 years at<em> HAL</em>, India and <em>Smiths Aerospace</em>, U.K.</p>
-<p><strong>Academic Experience:&nbsp;</strong>Faculty in the CSE department, IT(BHU) / IIT(BHU) since 1990.</p>
-<p><strong>Subjects Taught:&nbsp; </strong>Information Security, Advanced Computer Networks, Computer Graphics, Graph Theory,&nbsp;<span style="font-size:10px;">and many more...</span></p>
-<p><strong>Intellectual Property Rights: </strong>24 IPRs (Web applications, e-learning resources and XML content in vernacular) (Transferred to the Ministry of Communication &amp; Information&nbsp; Technology, GoI)</p>
-<p>​<b>Patent Published:&nbsp;</b><em>&nbsp;A&nbsp;Device&nbsp;For&nbsp;Modeling&nbsp; Software Clone&nbsp;Evolution Across Different Versions And&nbsp;a&nbsp;Method&nbsp;Thereof.&nbsp;</em>(201811016656 A)</p>
-
-                    </div>
-                    
-                </div>
+            <!-- /.navbar-collapse -->
+             
+         </div>
+         <!-- /.container-fluid -->
+      </nav>
+ 
+      <!-- Home Section -->
+      <section  name="home" id="home" style="margin-top:40px">
+         <div class="container lead">
+            <div align="left" class="col-md-3">
+               <a target="_blank" href="images/kkshukla.jpg">
+               <img id="mobile-img" src="images/kkshukla.small.jpg" width="200" border="0" height="250" alt=""></a>
             </div>
-        </section>
-        
-     
-        
-        <hr class="star-primary">
-         
-        
-    </body>
-    
+            <div align="left" class="col-md-9">
+               <h2>
+                  Dr. Kaushal Kumar Shukla
+                  <h5><i>Ph.D.(BHU), M.Tech (Gold Medal) (BHU), B.E (FIRST CLASS FIRST)</i></h5>
+               </h2>
+               <h4>
+                  Professor<br>
+                  <a href="https://www.iitbhu.ac.in/dept/cse">Department of Computer Science and Engineering</a><br>
+                  <a href="https://www.iitbhu.ac.in/">Indian Institute of Technology (BHU) Varanasi</a><br>
+                  Tel/Fax: <a href="tel:00915427165313">+91-0542-716-5313</a> <br/>
+                  Email:
+                  <script language="JavaScript">
+                     <!--
+                     document.write("&nbsp;");
+                     spiderjam('kkshukla.cse','iitbhu.ac.in');
+                     -->
+                  </script>
+				  ,
+				   <script language="JavaScript">
+                     <!--
+                     document.write("&nbsp;");
+                     spiderjam('kkshukla.cse','gmail.com');
+                     -->
+                  </script>
+               </h4>
+               <h4><i>Area of Interest: Artificial Intelligence,Neural Networks,Data Science</i> <a href="#intro" onclick="javascript:reset_menus();$('#tab-intro-content').show();" class="btn-primary btn-xs">&raquo;</a><br></h4>
+            </div>
+            <!--<p><a href="#" class="btn btn-primary">More &raquo;</a></p>-->
+            <b class="expandshow" style="display:none;" id="tab-1">
+            <button class="btn btn-primary btn-lg btn-block" style="width: 100%;" onclick="javascript:$('.allshow').show();$('.noshow').hide();$('.collapseshow').show();$('.expandshow').hide();">EXPAND ALL SECTIONS <span class="glyphicon glyphicon-chevron-down"></span></button>
+            </b>
+            <b class="collapseshow" style="display:none;" id="tab-1">
+            <button class="btn btn-primary btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('.allshow').hide();$('.noshow').show();$('.expandshow').show();$('.collapseshow').hide();">COLLAPSE ALL SECTIONS <span class="glyphicon glyphicon-chevron-up"></span></button>
+            </b>
+         </div>
+      </section>
+      <!-- Home Section -->
+      <section name="intro" id="intro">
+         <div class="container lead">
+            <div style="text-align: left; margin-top:50px" class="col-md-12">
+               <!--<h2>Welcome!</h2>-->
+               <b class="noshow" style="display:none;" id="tab-1">
+               <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-intro-content').toggle();">Introduction <span class="glyphicon glyphicon-chevron-down"></span></button>
+               </b>
+               <div class="allshow" style="display:none;" id="tab-intro-content">
+                  <hr class="star-primary">
+				  <h2>INTRODUCTION </h2>
+				  
+                  <p><strong>Academic Qualifications:&nbsp;</strong> Ph.D.(BHU), M.Tech (Gold Medal) (BHU), B.E (FIRST CLASS FIRST)</p>
+                  <p><strong>Industry Experience:&nbsp;</strong> &nbsp;8 years at<em> HAL</em>, India and <em>Smiths Aerospace</em>, U.K.</p>
+                  <p><strong>Academic Experience:&nbsp;</strong>Faculty in the CSE department, IT(BHU) / IIT(BHU) since 1990.</p>
+                  <p><strong>Subjects Taught:&nbsp; </strong>Information Security, Advanced Computer Networks, Computer Graphics, Graph Theory,&nbsp;<span style="font-size:10px;">and many more...</span></p>
+                  <p><strong>Intellectual Property Rights: </strong>24 IPRs (Web applications, e-learning resources and XML content in vernacular) (Transferred to the Ministry of Communication &amp; Information&nbsp; Technology, GoI)</p>
+                  <p>​<b>Patent Published:&nbsp;</b><em>&nbsp;A&nbsp;Device&nbsp;For&nbsp;Modeling&nbsp; Software Clone&nbsp;Evolution Across Different Versions And&nbsp;a&nbsp;Method&nbsp;Thereof.&nbsp;</em>(201811016656 A)</p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Research Section -->
+      <section name="research" id="research">
+         <div class="container lead">
+            <div style="text-align: left; margin-top:50px" class="col-md-12">
+               <b class="noshow" style="display:none;" id="tab-2">
+               <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-research-content').toggle();">Introduction <span class="glyphicon glyphicon-chevron-down"></span></button>
+               </b>
+               <div class="allshow" style="display:none;" id="tab-research-content">
+                  <hr class="star-primary">
+				  <h2>RESEARCH </h2>
+                  <p><strong>Broad Areas of Research: </strong></p>
+                  <p>Artificial Intelligence,Neural Networks,Data Science</p>
+                  <p><b>Current Interests:</b></p>
+                  <p>Robust machine learning, Interpretable models,&nbsp;secure MPC</p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section name="publications" id="publications">
+         <div class="container lead">
+            <div style="text-align: left;" class="col-md-12">
+               <b class="noshow" style="display:none;" id="tab-3">
+               <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-publications-content').toggle();">Publications  <span class="glyphicon glyphicon-chevron-down"></span></button>
+               </b>
+               <div class="allshow" style="" id="tab-publications-content">
+                  <hr class="star-primary" id="books">
+                  <div class="container lead" style="margin-top:40px">
+				  <h2 >BOOKS </h2>
+                  <ul>
+                     <li> 
+                        Neuro Computers - Optimization Based Learning, Narosa India, CRC Press and&nbsp; Alpha Science Publications, U.K., ISBN 81-7319-382-7. © 2011
+                     </li>
+                     <li>K. K. Shukla, A. K. Tiwari, Efficient Algorithms for Discrete Wavelet Transform, Springer Series in Computer Science, DOI: 10.1007/978-1-4471-4941-5_2, © 2013.&nbsp; &nbsp;</li>
+                     <li>Advances in Real Time Task Scheduling, Lambert Academic Gmbh, Germany, ISBN 978-3-8443-0142-7,&nbsp; © 2012.</li>
+                     <li>Fuzzy Uncertainty Models and Algorithms, Lambert Academic Gmbh, Germany, ISBN 978-3-8443-1647-6,&nbsp; © 2009.</li>
+                     <li>Lossy Image Compression: Domain Decomposition Based Algorithms, Springer Briefs in Computer Science, UK, ISBN 978-1-4471-2218-0 © 2011.</li>
+                  </ul>
+				  </div>
+                  <hr class="star-primary" id="chapters">
+				  <div class="container lead" style="margin-top:40px">
+                  <h2 >CHAPTERS </h2>
+                  <ul>
+                     <li>Application of Bayesian Automated&nbsp;Hyper-parameter Tuning on Classifiers&nbsp;Predicting Customer Retention&nbsp;in Banking Industry, CHAPTER in the book:&nbsp;<em>Data Management, Analytics&nbsp;and Innovation,&nbsp;</em>Ed.&nbsp;Neha Sharma,&nbsp;Amlan Chakrabarti,&nbsp;Valentina Emilia Balas,&nbsp;Jan Martinovic,&nbsp;Advances in Intelligent Systems and Computing series,&nbsp;<strong>Volume 1175</strong>,&nbsp;Pp.&nbsp;<strong>83-100</strong>, Series Ed.&nbsp;Janusz Kacprzyk, Systems Research Institute, Polish Academy of Sciences, Warsaw, Poland,&nbsp;<strong>ISBN </strong>978-981-15-5618-0 <strong>ISBN</strong> 978-981-15-5619-7 (eBook),&nbsp;<strong>© Springer Nature Singapore Pte Ltd. 2020&nbsp; &nbsp;</strong><span style="color:#FF0000;">[</span><a href="https://link.springer.com/chapter/10.1007/978-981-15-5619-7_7"><span style="color:#FF0000;"> LINK</span></a><span style="color:#FF0000;"> ]</span></li>
+                     <li>Diabetic Retinopathy Detection Using Twin Support Vector Machines,&nbsp;CHAPTER in the book&nbsp;<em>Advances in Bioinformatics, Multimedia, and Electronics Circuits and Signals</em>, Ed. L C Jain et al, pp. 91-104,&nbsp;ISBN 978-981-15-0339-9 Springer&nbsp;<strong>© 2019</strong></li>
+                     <li>Invited Chapter in –Softcomputing &amp; Intelligent Systems:Theory And &nbsp;&nbsp;&nbsp;Applications, ed. N. K. Sinha, &nbsp;&nbsp;M.M.Gupta, Academic Press, USA, ISBN 99-65097. © 1999</li>
+                     <li>Invited Chapter in –Multimedia Systems and Content-Based Image Retrieval, ed. S Deb, Idea &nbsp;&nbsp;&nbsp;Group Inc., USA, ISBN: 1-59140-156-9. © 2004</li>
+                     <li>Book Chapter -Bharavi Mishra K. K. Shukla, Data Mining Techniques for Software Quality Prediction IGI Global (source title: Designing, Engineering, and Analyzing Reliable and Efficient Software, DOI: 10.4018/978-1-4666-2958-5, ISBN13: 9781466629585) © 2013.</li>
+                     <li>Book Chapter - Pranab K. Muhuri, K. K. Shukla, Task Scheduling under Uncertain Timing Constraints in Real-Time Embedded Systems (Source Title: Embedded Computing Systems: Applications, Optimization, and Advanced Design, IGI Global, DOI: 10.4018/978-1-4666-3922-5, ISBN13: 9781466639225)© 2013</li>
+                     <li>Book Chapter - Bharvi Mishra, K K Shukla (2014), Data Mining Techniques for Software Quality Prediction, in Software Design and Development: Concepts, Methodologies, Tools, and Applications, Information Resources Management Association (Ed.), pp. 401-428, DOI: 10.4018/978-1-4666-4301-7.ch 21.</li>
+                  </ul>
+				  </div>
+                  <hr class="star-primary" id="selected-papers">
+				   <div class="container lead" style="margin-top:40px">
+                  <h2 >SELECTED PAPERS </h2>
+                  <ul>
+                     <li>Vandana Bharti, Bhaskar Biswas,&nbsp;Kaushal Kumar Shukla (2023)&nbsp;MDO: a novel murmuration-flight based dispersive optimization algorithm and its application to image security,&nbsp;<strong><em>Journal of Ambient Intelligence and Humanized Computing</em></strong>,&nbsp;07 February 2023&nbsp;&nbsp;<a data-saferedirecturl="https://www.google.com/url?q=https://doi.org/10.1007/s12652-023-04537-5&amp;source=gmail&amp;ust=1675923644169000&amp;usg=AOvVaw1D3QF0vtV1HDQZ6KxJILw9" href="https://doi.org/10.1007/s12652-023-04537-5" target="_blank">https://doi.<wbr>org/10.1007/s12652-023-04537-5</a></li>
+                     <li>Vandana Bharti, Shabari S Nair, Akshat Jain, Kaushal Kumar Shukla, Bhaskar Biswas (2022)&nbsp;Concept drift detection in toxicology datasets using discriminative subgraph-based drift detector,&nbsp;<strong><em>Briefings in Bioinformatics</em></strong>, December 2022;&nbsp;<a data-google-interstitial="false" href="https://doi.org/10.1093/bib/bbac506">https://doi.org/10.1093/bib/bbac506</a></li>
+                     <li>Anviti Pandey,&nbsp;Sanjay Kumar Singh,&nbsp;Sandeep S. Udmale,<strong>&nbsp;</strong>K. K. Shukla&nbsp;(2022)&nbsp;Epileptic Seizure Classification using Battle Royale Search and Rescue optimization based Deep LSTM,&nbsp;<strong>&nbsp;<em>IEEE Journal of Biomedical and Health Informatics</em></strong> ( Early Access ),&nbsp;September 2022,&nbsp;PubMed ID: 36048978&nbsp;[&nbsp;<a href="https://ieeexplore.ieee.org/document/9873913">Link</a>&nbsp;]</li>
+                     <li>Sarika Keshri,&nbsp;Shyam Lal,&nbsp;K.K. Shukla<strong>&nbsp;</strong>(2022)&nbsp;Picture Quality and&nbsp;Compression Analysis of Multilevel Legendre Wavelet Transformation Based Image Compression Technique,&nbsp;<em><strong>Multimedia Tools and Applications</strong></em>,&nbsp;81:29799–29845, DOI 10.1007/s11042-022-12675-9, April&nbsp;2022&nbsp;&nbsp;[&nbsp;<a href="https://rdcu.be/cU145">Link</a>&nbsp;]&nbsp;</li>
+                     <li>Manisha Singla,&nbsp;Debdas Ghosh,&nbsp;K. K. Shukla&nbsp;(2021) pin-TSVM: A Robust Transductive Support Vector Machine and its Application to the Detection of COVID-19 Infected Patients,&nbsp;Accepted: 17 July&nbsp;2021,&nbsp;<em><strong>Neural Processing Letters</strong></em>, Springer&nbsp;(2021) 53:3981–4010&nbsp;[&nbsp;<a href="https://rdcu.be/co5Qd">Link</a>&nbsp;]&nbsp;</li>
+                     <li>Vandana Bharti, B Biswas, and&nbsp;K K Shukla&nbsp;(2021)&nbsp;A Novel Multiobjective GDWCN-PSO Algorithm and its Application to Medical Data Security. <em><strong>ACM Transactions on Internet Technology</strong></em>. Vol 21, Issue 2, June 2021, Article no.:46 pp. 1-28&nbsp;&nbsp;DOI:10.1145/3397679 &nbsp;&nbsp;[&nbsp;<a href="https://dl.acm.org/doi/abs/10.1145/3397679">Link</a>&nbsp;]&nbsp;</li>
+                     <li>Vandana Bharati, Bhaskar Biswas,&nbsp;K K Shukla, (April 2021)&nbsp;EMOCGAN: a novel evolutionary multiobjective cyclic generative adversarial network and its application to unpaired image translation,<em><strong> Neural Computing and Applications</strong></em> (2021), Special Issue on Neural Computing and Applications in Computer Vision and Image Processing&nbsp;ISSN:&nbsp;0941-0643 (Print)&nbsp;1433-3058 (Online)Springer, DOI:&nbsp;<a href="https://doi.org/10.1007/s00521-021-05975-y">https://doi.org/10.1007/s00521-021-05975-y</a></li>
+                     <li>D&nbsp;R Sahu, J C&nbsp;Yao, M Verma,&nbsp;K K Shukla<strong>,&nbsp;</strong>(2021)&nbsp;Convergence rate analysis of proximal gradient methods with applications to composite minimization problems,&nbsp;<strong><em>Optimization</em></strong>, Taylor &amp; Francis, Vol 70, Issue 1,&nbsp; January 2021, pages 75-100. (online first 2020)&nbsp; DOI&nbsp;10.1080/02331934.2019.1702040&nbsp;[&nbsp;<a href="https://doi.org/10.1080/02331934.2019.1702040">Link</a>&nbsp;]</li>
+                     <li>Manisha Singla, Debdas Ghosh, K K Shukla&nbsp;(2020)&nbsp;Improved Sparsity of Support Vector Machine with Robustness Towards Label Noise Based on Rescaled Hinge Loss with Non-smooth Regularizer,&nbsp;Accepted: 1 September 2020,&nbsp;<em><strong>Neural Processing Letters</strong></em>, Springer&nbsp;<span style="color:#FF0000;">[ </span><a href="https://rdcu.be/b7eTj"><span style="color:#FF0000;">Link</span></a><span style="color:#FF0000;"> ]</span>&nbsp;</li>
+                     <li>Vandana Bharti, B Biswas, and K K Shukla (2020)&nbsp;A Novel Multiobjective GDWCN-PSO Algorithm and its Application to Medical Data Security. <em><strong>ACM Transactions on Internet Technology</strong></em>. [Forthcoming] DOI:10.1145/3397679 &nbsp;&nbsp;<span style="color:#FF0000;">[ </span><a href="https://dl.acm.org/doi/abs/10.1145/3397679"><span style="color:#FF0000;">Link</span></a><span style="color:#FF0000;"> ]</span>&nbsp;</li>
+                     <li>Mridula Verma,&nbsp;K. K. Shukla&nbsp;(2020)&nbsp;Convergence analysis of accelerated proximal extra-gradient method with applications,&nbsp;<strong><em>Neurocomputing</em></strong>, Elsevier,&nbsp;Volume 388, &nbsp;May 2020, Pages 288-300. DOI&nbsp;10.1016/j.neucom.2020.01.049&nbsp;&nbsp;<span style="color:#FF0000;">[ </span><a href="https://doi.org/10.1016/j.neucom.2020.01.049"><span style="color:#FF0000;">Link</span></a><span style="color:#FF0000;"> ]</span>&nbsp;</li>
+                     <li>Manisha Singla, Debdas Ghosh,<strong> </strong>K.K.Shukla, Witold Pedrycz&nbsp;(2020)&nbsp;Robust twin support vector regression based on rescaled Hinge loss,&nbsp;<strong><em>Pattern Recognition</em></strong>, Elsevier, vol 105, Online 28 April 2020 DOI&nbsp;10.1016/j.patcog.2020.107395&nbsp; &nbsp;<span style="color:#FF0000;">[ </span><a href="https://doi.org/10.1016/j.patcog.2020.107395"><span style="color:#FF0000;">Link</span></a><span style="color:#FF0000;"> ]</span>&nbsp;</li>
+                     <li>D&nbsp;R Sahu, J C&nbsp;Yao, M Verma, K K Shukla&nbsp;(2020)&nbsp;Convergence rate analysis of proximal gradient methods with applications to composite minimization problems,<strong>&nbsp;<em>Optimization</em></strong>, Taylor &amp; Francis, Online First, DOI&nbsp;10.1080/02331934.2019.1702040&nbsp;<span style="color:#FF0000;">[ </span><a href="https://doi.org/10.1080/02331934.2019.1702040"><span style="color:#FF0000;">Link</span></a><span style="color:#FF0000;"> ]</span></li>
+                     <li>Manisha Singla, Debdas Ghosh, K K Shukla<strong>&nbsp;</strong>(2019)&nbsp;A survey of robust optimization based machine learning with special reference to support vector machines,<em>&nbsp;<strong>International Journal of Machine Learning and Cybernetics</strong></em>, 11:1359–1385<em>,&nbsp;</em>Springer Berlin Heidelberg, DOI:10.1007/s13042-019-01044-y<strong>​&nbsp;</strong><span style="color:#FF0000;">[</span><a href="https://rdcu.be/b4SD6"><span style="color:#FF0000;">Link</span></a><span style="color:#FF0000;">]</span></li>
+                     <li>Manisha Singla,<strong> </strong>K K Shukla&nbsp;(2019)&nbsp;Robust statistics-based support vector machine and its variants: a survey, <strong><em>Neural Computing and Applications</em></strong>, pp. 1-22,&nbsp;<em>online first</em>, Springer London,&nbsp;Online ISSN&nbsp;<strong>1433-3058&nbsp;&nbsp;</strong>&nbsp;<span style="color:#FF0000;">[ </span><a href="https://link.springer.com/article/10.1007/s00521-019-04627-6?wt_mc=Internal.Event.1.SEM.ArticleAuthorOnlineFirst&amp;utm_source=ArticleAuthorOnlineFirst&amp;utm_medium=email&amp;utm_content=AA_en_06082018&amp;ArticleAuthorOnlineFirst_20191203#citeas"><span style="color:#FF0000;">Link</span></a><span style="color:#FF0000;"> ]</span></li>
+                     <li>Debdas Ghosh, Akshay Sharma, <strong>K. K. </strong><strong>Shukla</strong>,&nbsp;Amar Kumar, Kartik Manchanda&nbsp;(2019)&nbsp;Globalized Robust Markov Perfect Equilibrium for Discounted Stochastic Games and its Application on Intrusion Detection in Wireless Sensor Networks,&nbsp;<em>Japan Journal of Industrial and Applied Mathematics</em>, [online first],&nbsp;ISSN&nbsp;<strong>1868-937X</strong>, pp <strong>1-26</strong>.&nbsp;&nbsp;<span style="color:#FF0000;">[ </span><a href="https://link.springer.com/article/10.1007/s13160-019-00397-9?wt_mc=Internal.Event.1.SEM.ArticleAuthorOnlineFirst&amp;utm_source=ArticleAuthorContributingOnlineFirst&amp;utm_medium=email&amp;utm_content=AA_en_06082018&amp;ArticleAuthorContributingOnlineFirst_20191114"><span style="color:#FF0000;">Link</span></a><span style="color:#FF0000;"> ]</span></li>
+                     <li>Deevashwer Rathee, Thomas Schneider&nbsp;and <strong>K. K. Shukla</strong> (2019)&nbsp;Improved Multiplication Triple<br>
+                        Generation over Rings via RLWE-Based AHE,&nbsp;CANS 2019, <strong>LNCS 11829</strong>,&nbsp;Springer Nature Switzerland AG, pp. 347–359.&nbsp;&nbsp;<span style="color:#FF0000;">[ </span><a href="https://encrypto.de/papers/RSS19.pdf"><span style="color:#FF0000;">Link</span></a><span style="color:#FF0000;"> ]</span>
+                     </li>
+                     <li>Debdas Ghosh, Abhishek Singh, <strong>K K Shukla</strong>, Kartik Manchanda&nbsp;(2019)&nbsp;Extended Karush-Kuhn-Tucker condition for constrained interval optimization problems and its application in support vector machines,&nbsp;<em>Information Sciences</em>,&nbsp;Volume 504, Pages 276-292.&nbsp;&nbsp;<span style="color:#FF0000;">[ </span><a href="https://www.sciencedirect.com/science/article/pii/S0020025519306218?via%3Dihub"><span style="color:#FF0000;">Link</span></a><span style="color:#FF0000;"> ]</span></li>
+                     <li>Himadri Mishra, <strong>K K Shukla</strong>&nbsp;(2018)&nbsp;Scaling Neural Programmer-Interpreter For Real-Life Tasks&nbsp;, <strong>CVPR&nbsp;2018</strong>&nbsp;&nbsp;<span style="color:#FF0000;">[ </span><a href="https://deepvision.data61.csiro.au"><span style="color:#FF0000;">Link</span></a><span style="color:#FF0000;"> ]</span></li>
+                     <li>Mridula Verma, D. R. Sahu, <strong>K. K. Shukla</strong>, VAGA: A&nbsp;novel viscosity-based accelerated gradient algorithm Convergence analysis and applications, <em>Applied Intelligence<strong>,&nbsp;</strong></em>(2018) 48:2613–2627, Springer Science+Business Media, LLC, part of Springer Nature. <span style="color:#FF0000;">[ </span><a href="https://link.springer.com/content/pdf/10.1007%2Fs10489-017-1110-1.pdf"><span style="color:#FF0000;">Link</span></a><span style="color:#FF0000;"> ]</span></li>
+                     <li>Madhushi Verma and <strong>K. K. Shukla</strong> (2016) Fuzzy Metric Space Induced by Intutionistic Fuzzy Points and its Application to the Orientering Problem,<em> IEEE Transactions on Fuzzy Systems</em>, vol. 24 (2), pp. 483-488, April 2016.&nbsp;doi: 10.1109/TFUZZ.2015.2452948 <span style="color:#FF0000;">[ </span><a href="https://ieeexplore.ieee.org/document/7150387/?section=abstract"><span style="color:#FF0000;">Link</span></a><span style="color:#FF0000;"> ]</span></li>
+                     <li>Mridula Verma &amp; <strong>K. K. Shukla</strong> (2017) A new accelerated proximal gradient technique for regularized multitask learning framework, <em>Pattern Recognition Letters</em>, Vol. 95, pages 98-103&nbsp;<a href="http://www.sciencedirect.com/science/article/pii/S0167865517302209" target="_blank"><span style="color:#FF0000;">[ Link ]</span></a></li>
+                     <li>Mridula Verma &amp;<strong> K. K. Shukla</strong> (2017) A new accelerated proximal technique for regression with high-dimensional datasets,&nbsp;<em>Knowledge and Information Systems</em>, pp. 1-16. ISSN: <a href="tel:0219-3116">0219-3116</a> <span style="color:#FF0000;">[</span><a href="https://dl.acm.org/citation.cfm?id=3140627"><span style="color:#FF0000;">Link</span></a><span style="color:#FF0000;">]</span></li>
+                     <li>Pranav Goel , Devang Kulshreshtha∗ , Prayas Jain and <strong>K.K. Shukla</strong>(2017)&nbsp;Prayas at EmoInt 2017: An Ensemble of Deep Neural Architectures for&nbsp;Emotion Intensity Prediction in Tweets, Proceedings of the 8th Workshop on Computational Approaches to Subjectivity, Sentiment and Social Media Analysis, pp. 58-65&nbsp; <span style="color:#FF0000;">[</span><a href="https://www.aclweb.org/anthology/W17-5207"><span style="color:#FF0000;">Link</span></a><span style="color:#FF0000;">]&nbsp;&nbsp;</span>Published on aclweb.org</li>
+                     <li>Ramesh C. Pandey, Sanjay K. Singh,<strong> Kaushal K. Shukla</strong>, Passive forensics in image and video using noise features: A review, <em>Digital Investigation</em>, Volume 19, December 2016, Pages 1-28, ISSN <a href="tel:1742-2876">1742-2876</a>. <span style="color:#FF0000;">[</span><a href="https://dl.acm.org/citation.cfm?id=3032942"><span style="color:#FF0000;">Link</span></a><span style="color:#FF0000;">]</span></li>
+                     <li>Anoop Kumar Tiwari, Shivam Shreevastava, Tanmoy Som, <strong>K K Shukla</strong>&nbsp;(2018), Tolerance-based intuitionistic fuzzy-rough set approach for attribute reduction,&nbsp;<em>Expert Systems with Applications</em>,&nbsp;Volume 101,&nbsp;1 July 2018, pp.&nbsp;205-212. <span style="color:#FF0000;">[</span><a href="https://www.sciencedirect.com/science/article/pii/S0957417418300800"><span style="color:#FF0000;">Link</span></a><span style="color:#FF0000;">]</span></li>
+                     <li>Anuranjeeta A, <strong>Shukla K. K</strong>, Tiwari A, Sharma S. Classification of Histopathological images of Breast Cancerous and Non Cancerous Cells Based on Morphological features.<strong> </strong><em>Biomedical and Pharmacology Journal</em>&nbsp;, 10(1), pp. 353-366. <span style="color:#FF0000;">[</span><a href="http://biomedpharmajournal.org/vol10no1/classification-of-histopathological-images-of-breast-cancerous-and-non-cancerous-cells-based-on-morphological-features/"><span style="color:#FF0000;">Link</span></a><span style="color:#FF0000;">]</span></li>
+                     <li>Mridula Verma, Prayas Jain, <strong>K K Shukla </strong>(2016) A New Faster First Order Iterative Scheme for Sparsity-based Multitask Learning, Proceedings of 2016 <em>IEEE International Conference on Systems, Man, and Cybernetics (<strong>SMC-16</strong>)</em>, Budapest, Hungary, pp. 1603-1608. <span style="color:#FF0000;">[</span><a href="https://ieeexplore.ieee.org/document/7844468/"><span style="color:#FF0000;">Link</span></a><span style="color:#FF0000;">]</span></li>
+                     <li>Mridula Verma and<strong> K. K. Shukla</strong>, Performance comparison of proximal methods for regression with nonsmooth regularizers on real datasets,<em> International Conference on Advances in Computing, Communications and Informatics (<strong>ICACCI</strong>)</em>, Jaipur, pp. 447-453 (Acceptance Rate: 23%). <span style="color:#FF0000;">[</span><a href="https://ieeexplore.ieee.org/document/7732086/"><span style="color:#FF0000;">Link</span></a><span style="color:#FF0000;">]</span></li>
+                     <li>Mridula Verma and<strong> K. K. Shukla</strong> (2017) Fast Multi-Modal Unified Sparse Representation Learning. In <em>Proceedings of the 2017 ACM on International Conference on Multimedia Retrieval (<strong>ICMR '17</strong>)</em>. ACM, NY, USA, 443-447. <span style="color:#FF0000;">[</span><a href="https://dl.acm.org/citation.cfm?id=3079040"><span style="color:#FF0000;">Link</span></a><span style="color:#FF0000;">]</span></li>
+                     <li>Ramashish Gaurav, Mridula Verma, and <strong>K K Shukla</strong>. 2016. Informed multimodal latent subspace learning via supervised matrix factorization. In Proceedings of the Tenth<em> Indian Conference on Computer Vision, Graphics and Image Processing (<strong>ICVGIP '16</strong>)</em>. ACM, NY, USA, Article 36. <span style="color:#FF0000;">[</span><a href="https://dl.acm.org/citation.cfm?id=3010012"><span style="color:#FF0000;">Link</span></a><span style="color:#FF0000;">]</span></li>
+                     <li>Jain P., <strong>Shukla K.K.</strong> (2016) Cryptographic Assessment of SSL/TLS Servers Popular in India. In: Mueller P., Thampi S., Alam Bhuiyan M., Ko R., Doss R., Alcaraz Calero J. (eds) Security in Computing and Communications. <em>SSCC 2016</em>. <em><strong>Communications in Computer and Information Science</strong>, vol 625</em>. Springer. <span style="color:#FF0000;">[</span><a href="https://link.springer.com/chapter/10.1007/978-981-10-2738-3_10"><span style="color:#FF0000;">Link</span></a><span style="color:#FF0000;">]</span></li>
+                     <li>Madhushi Verma and <strong>K. K. Shukla </strong>(2017) An Integer Programming Formulation of the Intuitionistic Fuzzy Orienteering Problem and Its Work-Depth Analysis, In Proc. of The International Conference on Engineering and Applied Sciences (<strong><em>TICEAS-2017</em></strong>), Singapore, 2017.</li>
+                     <li>Ishank Arora, Anant Dadu, Mridula Verma, <strong>K. K. Shukla</strong>,(2016) ”Random Projections of Fischer Linear Discriminant Classifier for Multi-Class Classification”, in proceedings of the 4th International Symposium on Computational and Business Intelligence, September 2016, Olten, Switzerland, pp. 165-169.&nbsp;<span style="color:#FF0000;">[</span><a href="https://ieeexplore.ieee.org/document/7743277"><span style="color:#FF0000;">Link</span></a><span style="color:#FF0000;">]</span></li>
+                     <li>M. Verma, S. Asmita and&nbsp;<strong>K. K. Shukla</strong>&nbsp;(2016) A Regularized Ensemble of Classifiers for Sensor Drift Compensation.<em> <strong>IEEE Sensors Journal</strong></em>, vol. 16, no. 5, pp. 1310-1318. doi: 10.1109/JSEN.2015.2497277. <span style="color:#FF0000;">[</span><a href="https://ieeexplore.ieee.org/document/7331610/"><span style="color:#FF0000;">Link</span></a><span style="color:#FF0000;">]</span></li>
+                     <li>Jayadeep Pati,&nbsp;<strong>K K Shukla</strong>&nbsp;(2015), A Hybrid Technique for Software Reliability Prediction, <em><strong>ISEC15</strong></em>, Proceedings of the 8th India Software Engineering Conference, ISOFT, the India chapter of <strong><em>ACM SIGSOFT&nbsp;</em></strong><span style="color:#FF0000;">[</span><a href="https://dl.acm.org/citation.cfm?id=2723756"><span style="color:#FF0000;">Link</span></a><span style="color:#FF0000;">]</span></li>
+                     <li>S. Sah,&nbsp;<strong>K K Shukla&nbsp;</strong>, Construction and Maintenance of Virtual Backbone in Wireless Networks, <strong><em>Wireless Networks</em></strong>, Springer, Volume 19, Issue 5, Print ISSN <a href="tel:1022-0038">1022-0038</a>, Online ISSN <a href="tel:1572-8196">1572-8196</a>, pp 969-984, July 2013.</li>
+                     <li>Madhushi Verma and&nbsp;<strong>K. K. Shukla</strong>&nbsp;(2014), Evaluation of Ranking Methods for the Constrained Fuzzy Shortest Path Problem, in proceedings of the second International Conference on Emerging Research in Computing, Information, <strong>Communication and Applications</strong> (Elsevier), pp. 812-822, ISBN: <a href="tel:9789351072638">9789351072638</a>.</li>
+                     <li>Jayadeep Pati,&nbsp;<strong>K. K Shukla</strong>, (2014), A Neural Network Approach to Debian Bug Number Prediction, 4th&nbsp;&nbsp;International Conference on Computational Intelligence and Information Technology –<em> <strong>CIIT 2014</strong></em>, Computer Application and Signal Processing 2014, Available from: http://dx.doi.org/10.3850/978-981-09-1137-9_p004.</li>
+                     <li>Ramesh Chand Pandey, Rishabh Agrawal, Sanjay Kumar Singh,&nbsp;<strong>K. K. Shukla</strong>&nbsp;(2014), Passive Copy Move Forgery Detection Using SURF, HOG and SIFT Features, Proceedings of the 3rd International Conference on Frontiers of Intelligent Computing: Theory and Applications (<strong><em>FICTA</em></strong>) 2014, Advances in Intelligent Systems and Computing Volume 327, 2015, pp 659-666.</li>
+                     <li>Mridula Verma and&nbsp;<strong>K. K. Shukla</strong>&nbsp;(2014), Efficient Kernel Fuzzy c-Means Clustering on Very Large Scale Data using Random Fourier Features, in proceedings of the second International Conference on Emerging Research in Computing, Information, Communication and Applications (<em><strong>ERCICA</strong></em>) (Elsevier), pp. 74-81, ISBN: <a href="tel:9789351072638">9789351072638</a></li>
+                     <li>Mohit Mishra, Utkarsh Chaturvedi,&nbsp;<strong>K. K. Shukla</strong>&nbsp;(2014), A New Heuristic Algorithm based on Molecular Geometry Optimization and its Application to the Integer Factorization Problem,<em> Intl. Conference on Soft Computing &amp; Machine Intelligence</em>, (<em><strong>ISCMI</strong></em>)2014-1-014E.</li>
+                     <li>Abhishek Pandeya, R. Prasada, V.P. Singh,&nbsp;&nbsp;S.K. Jha,<strong>&nbsp;K.K. Shukla</strong>, Crop Parameters Estimation by Fuzzy Inference System using X-band Scatterometer Data, <em><strong>Advances in Space Research</strong></em>, Elsevier,&nbsp;Volume 51, Issue 5, p. 905-911, March, 2013.&nbsp;</li>
+                     <li>Madhushi Verma,&nbsp;<strong>K. K. Shukla</strong>,&nbsp;&nbsp;A Greedy Algorithm for Fuzzy Shortest Path Problem, <strong><em>International Journal of Fuzzy System Applications</em></strong>, IGI Global,&nbsp;<strong>3(2)</strong>, 55-70,&nbsp;&nbsp;April-June 2013.</li>
+                  </ul>
+				  </div>
+                  <hr class="star-primary" id="international-publications">
+				   <div class="container lead" style="margin-top:40px">
+                  <h2 >INTERNATIONAL PUBLICATIONS </h2>
+                  <ul>
+                     <li>Mridula Verma &amp; K. K. Shukla (2017) A new accelerated proximal technique for regression with high-dimensional datasets. Knowledge and Information Systems, pp. 1-16. ISSN: 0219-3116</li>
+                     <li>Ramesh C. Pandey, Sanjay K. Singh, Kaushal K. Shukla, Passive forensics in image and video using noise features: A review, Digital Investigation, Volume 19, December 2016, Pages 1-28, ISSN 1742-2876.</li>
+                     <li>Mridula Verma, Prayas Jain, K K Shukla (2016) A New Faster First Order Iterative Scheme for Sparsity-based Multitask Learning, Proceedings of 2016 IEEE International Conference on Systems, Man, and Cybernetics (SMC), Budapest, Hungary, pp. 1603-1608.</li>
+                     <li>Mridula Verma and K. K. Shukla, Performance comparison of proximal methods for regression with nonsmooth regularizers on real datasets, International Conference on Advances in Computing, Communications and Informatics (ICACCI), Jaipur, pp. 447-453 (Acceptance Rate: 23%).</li>
+                     <li>Jain P., Shukla K.K. (2016) Cryptographic Assessment of SSL/TLS Servers Popular in India. In: Mueller P., Thampi S., Alam Bhuiyan M., Ko R., Doss R., Alcaraz Calero J. (eds) Security in Computing and Communications. SSCC 2016. Communications in Computer and Information Science, vol 625. Springer, Singapore.</li>
+                     <li>C. Pandey, S. K. Singh and K. K. Shukla (2017) A fully automated blind and passive forensic method for image splicing detection, SCESM, 27-28 January, Belagavi, India, pp. 1638-1645.</li>
+                     <li>Madhushi Verma and K. K. Shukla (2017) An Integer Programming Formulation of the Intuitionistic Fuzzy Orienteering Problem and Its Work-Depth Analysis, In Proc. of The International Conference on Engineering and Applied Sciences (TICEAS-2017), Singapore, 2017.</li>
+                     <li>Mridula Verma and K. K. Shukla (2017) Fast Multi-Modal Unified Sparse Representation Learning. Proceedings of 2017 ACM International Conference on Multimedia Retrieval (ICMR), Bucharest, Romania.</li>
+                     <li>Ramashish Gaurav, Mridula Verma, and K K Shukla. 2016. Informed multimodal latent subspace learning via supervised matrix factorization. In Proceedings of the Tenth Indian Conference on Computer Vision, Graphics and Image Processing (ICVGIP '16). ACM, New York, NY, USA, Article 36, 8 pages. DOI: https://doi.org/10.1145/3009977.3010012.</li>
+                     <li>M. Verma, S. Asmita and <strong>K. K. Shukla</strong> (2016) A Regularized Ensemble of Classifiers for Sensor Drift Compensation. IEEE Sensors Journal, vol. 16, no. 5, pp. 1310-1318. doi: 10.1109/JSEN.2015.2497277.</li>
+                     <li>Mridula Verma, Prayas Jain, <strong>K K Shukla</strong> (2016), A New Faster First Order Iterative Scheme for Sparsity-based Multitask Learning, Proceedings of 2016 IEEE International Conference on Systems, Man, and Cybernetics, Budapest, Hungary (Accepted).</li>
+                     <li>Madhushi Verma and <strong>K. K. Shukla</strong> (2015) Fuzzy Metric Space Induced by Intuitionistic Fuzzy Points and Its Application to the Orienteering Problem. IEEE Transactions on Fuzzy Systems 24(2): 483-488.</li>
+                     <li>Jayadeep Pati, <strong>K K Shukla</strong> (2015), A Hybrid Technique for Software Reliability Prediction, ISEC15, Proceedings of the 8th India Software Engineering Conference, ISOFT, the India chapter of ACM SIGSOFT (http://isoft.acm.org ), Publisher: ACM</li>
+                     <li>S. Sah, <strong>K K Shukla</strong> , Construction and Maintenance of Virtual Backbone in Wireless Networks, Wireless Networks, Springer, Volume 19, Issue 5, Print ISSN 1022-0038, Online ISSN 1572-8196, pp 969-984, July 2013.</li>
+                     <li>Madhushi Verma and <strong>K. K. Shukla</strong> (2014), Evaluation of Ranking Methods for the Constrained Fuzzy Shortest Path Problem, in proceedings of the second International Conference on Emerging Research in Computing, Information, Communication and Applications (Elsevier), pp. 812-822, ISBN: 9789351072638.</li>
+                     <li>Madhushi Verma, Mukul Gupta, Bijeeta Pal,  <strong>K. K. Shukla</strong> (2014), Roulette Wheel Selection based Heuristic Algorithm for the Orienteering Problem, International Journal of Computers &amp; Technology, vol. 13 (1), pp. 4127-4145, ISSN: 2277-3061.</li>
+                     <li>Madhushi Verma, Bijeeta Pal, Mukul Gupta and <strong>K. K. Shukla</strong> (2014), A Stochastic Greedy Heuristic Algorithm for the Orienteering Problem, 5th International Conference on Computer and Communication Technology.</li>
+                     <li>Jayadeep Pati and <strong>K K Shukla</strong>, (2014), A Comparison of ARIMA, Neural Network and a Hybrid Technique for Debian Bug Number Prediction, 5th International Conference on Computer and Communication Technology.</li>
+                     <li>Jayadeep Pati and <strong>K K Shukla</strong>, (2014), A Nonlinear ARIMA Technique for Debian Bug Number Prediction, Proc. of the Intl. Conf. on Advances in Computer and Electronics Technology- ACET 2014. ISBN: 978-1-63248-024-8 doi: 10.15224/ 978-1-63248-024-8-14.</li>
+                     <li>Jayadeep Pati and <strong>K K Shukla</strong>, (2014), Prediction of Temporal Bug Patterns of Debian Using Markov Model, International Journal of Advanced Research in Computer Science and Software Engineering, Volume 4, Issue 1, pp. 1-6, ISSN: 2277 128X.</li>
+                     <li>Jayadeep Pati, <strong>K. K Shukla</strong>, (2014), A Neural Network Approach to Debian Bug Number Prediction, 4th  International Conference on Computational Intelligence and Information Technology – CIIT 2014, Computer Application and Signal Processing 2014, Available from: http://dx.doi.org/10.3850/978-981-09-1137-9_p004.</li>
+                     <li>Ramesh Chand Pandey, Sanjay Kumar Singh and <strong>K.K.Shukla</strong> (2014), Passive Copy Move Forgery Detection in Video, 5th International Conference on Computer and Communication Technology.</li>
+                     <li>Ramesh Chand Pandey, Rishabh Agrawal, Sanjay Kumar Singh, <strong>K. K. Shukla</strong> (2014), Passive Copy Move Forgery Detection Using SURF, HOG and SIFT Features, Proceedings of the 3rd International Conference on Frontiers of Intelligent Computing: Theory and Applications (FICTA) 2014, Advances in Intelligent Systems and Computing Volume 327, 2015, pp 659-666.</li>
+                     <li>Mridula Verma and <strong>K. K. Shukla</strong> (2014), Efficient Kernel Fuzzy c-Means Clustering on Very Large Scale Data using Random Fourier Features, in proceedings of the second International Conference on Emerging Research in Computing, Information, Communication and Applications (Elsevier), pp. 74-81, ISBN: 9789351072638</li>
+                     <li>Mohit Mishra, Utkarsh Chaturvedi, <strong>K. K. Shukla</strong> (2014), A New Heuristic Algorithm based on Molecular Geometry Optimization and its Application to the Integer Factorization Problem, Intl. Conference on Soft Computing &amp; Machine Intelligence, ISCMI2014-1-014E.</li>
+                     <li>Kavita Gupta, <strong>K K Shukla</strong>, Faster Branch and Bound Algorithms for Solving the Maximum Clique Problem, International Journal of Advanced Research in Computer Science and Software Engineering, Page 656-664, Vol. 4, Issue 3, March 2014, ISSN: 2277 128X,  IF=2.08.</li>
+                     <li>Aman Singhal, <strong>K K Shukla</strong>, A new Energy Efficient Clustering based Communication Protocol for Wireless Sensor Networks, Proc. International Conference on Recent Trends in Information, Telecommunication and Computing, (ISBN 978-94-91587-21-3), Association of Computer Electronics and Electrical Engineers, 2014 DOI: 02.ITC.2014.5.69</li>
+                     <li>Nalin  Goel, <strong>K. K. Shukla</strong>, Modified Evolutionary Autonomous AgentsApproach to Image Feature Extraction, International Journal of Computer Applications, pp. 13-18, (0975 – 8887), ISBN : <strong>973-93-80875-15-9</strong>, Volume <strong>70</strong>– No.<strong>25</strong>, May 2013.</li>
+                     <li>Himani Arora, K.K.Shukla, Luc Duong, Stent Fitting using Cylindrical Affine Transformation Model for Pulmonary Artery, International Journal of Computer Applications, pp. 36-41, (0975 – 8887), ISBN : <strong>973-93-80875-09-1</strong>, Volume <strong>70</strong>– No.<strong>19</strong>, May 2013.</li>
+                     <li>Abhijeet Kumar Sinha, <strong>K.K. Shukla</strong>,” A Study of Distance Metrics in Histogram Based Image Retrieval”, International Journal of Computers &amp; Technology, Volume 4, No.3, pp. 69-78, , <strong>ISSN 2277-3061</strong>, March-April, 2013.</li>
+                     <li>Abhishek Pandeya, R. Prasada, V.P. Singh,  S.K. Jha, <strong>K.K. Shukla</strong>, Crop Parameters Estimation by Fuzzy Inference System using X-band Scatterometer Data, Advances in Space Research, Elsevier, Volume 51, Issue 5, p. 905-911, March, 2013. </li>
+                     <li>Madhushi Verma, <strong>K. K. Shukla</strong>,  A Greedy Algorithm for Fuzzy Shortest Path Problem , International Journal of Fuzzy System Applications, IGI Global, <strong>3(2)</strong>, 55-70,  April-June 2013.</li>
+                     <li>S. Sah, <strong>K K Shukla</strong>, Construction and Maintenance of Virtual Backbone in Wireless Networks, <strong><em>Wireless Networks</em></strong>, Springer, Volume <strong>19</strong>, Issue <strong>5</strong>, Print ISSN 1022-0038, Online ISSN <strong>1572-8196</strong>, pp 969-984, July 2013. </li>
+                     <li>Mousumi Dhara and. <strong>K.K.Shukla</strong>, Characteristics of Restricted Neighbourhood Search Algorithm and Markov Clustering on Modified Power-Law Distribution, IEEE conference RAIT-2012 , <strong>IEEE Catalog Number</strong>: CFP1234P-PRT,  <strong>ISBN</strong>: 978-1-4577-0694-3,  pp. <strong>520-525</strong> , March  2012.</li>
+                     <li>Mousumi Dhara and <strong>K.K.Shukla</strong>, Comparative performance analysis of RNSC and MCL Algorithms on Power-Law Distribution, Advanced Computing: An International Journal ( ACIJ ), Vol.<strong>3</strong>, No.<strong>5</strong>, <strong>ISSN: 2229 - 726X, e-ISSN: 2229 - 6727, doi: 10.5121/acij, </strong> pp. 19-34, 2012.</li>
+                     <li>Mousumi Dhara and <strong>K.K.Shukla</strong>, Performance Testing of RNSC and MCL Algorithms on Random Geometric Graphs, International Journal of Computer Applications, USA , (0975 – 8887),Volume <strong>53</strong>– No.<strong>12</strong>, pp. 5-11, 2012.</li>
+                     <li>Mousumi Dhara , <strong>K.K.Shukla</strong> and Neeraj Sharma, A critical Comparison of Graph Clustering Algorithms Using the K-clique Percolation Technique, International Journal of Engineering Research and Development, USA, ISSN No. : <strong>2278-067X</strong>, Volume <strong>3</strong>, Issue <strong>7</strong>, PP. 15-19, 2012.</li>
+                     <li>Bharavi Mishra, <strong>K.K. Shukla</strong>, Genetic Programming Based Prediction of Defects Using Static Code Attributes, International Journal of Data Analysis and Information Systems Vol. <strong>3</strong>, No. <strong>1</strong>, ISSN-<strong>2229-5887</strong>,pp-31-45, 2011.</li>
+                     <li>Bharavi Mishra, <strong>K K Shukla</strong>, Impact of Attribute Selection on Defect Proneness Prediction in OO Software, 2nd IEEE International Conference on Computer &amp; Communication Technology (ICCCT)-2011, <strong>IEEE Catalog Number</strong>: CFP11ICB-ART, <strong>ISBN</strong>: 978-1-4577-1386-6, pp. <strong>367-372</strong>, 2011.</li>
+                     <li>Bharavi Mishra, <strong>K.K. Shukla</strong>,Mining Attributes Patterns of Defective Modules for Object Oriented Software, International Journal of Computer Applications (IJCA). Volume <strong>54</strong>, No. <strong>11</strong>, ISBN: <strong>973-93-80870-55-0</strong>, pp14-18, 2012.</li>
+                     <li>Bharavi Mishra, <strong>K.K. Shukla</strong>,Defect Prediction for Object Oriented Software Using Support Vector Based Fuzzy Classification Model, International Journal of Computer Applications (IJCA), DOI: <strong>10.5120/9766-3114</strong>, 60(15):8-16, December 2012.</li>
+                     <li>Bharavi Mishra, <strong>K.K. Shukla</strong>,Support Vector Machine Based Fuzzy Classification Model for Software Fault Prediction, In Proceedings of the 5th International Conference on Artificial Intelligence, ISBN-<strong>978-0-972-7412-8-6</strong>, pp-693-708, 2011.                                                                                                       </li>
+                     <li>Mahanth K Gowda, <strong>K. K. Shukla</strong>, Energy and Throughput Optimized, cluster Based Hierarchical Routing Algorithm for Heterogeneous Wireless Sensor Networks, Int. J. Communications, Network and System Sciences, ISSN <strong>19133715</strong>, vol. <strong>4</strong>, No. <strong>5</strong>, , pp. 335-344, 2011.                                                                                             </li>
+                     <li>Mohanchur Sarkar, <strong>K.K.Shukla</strong> and K.S.Dasgupta: Proactive Transport Protocol Performance Enhancement of Satellite based Networks. . <em>International Journal of Computer Applications</em> <strong>1(16)</strong>:100–107, February 2010. Published By Foundation of Computer Science.  <strong>Doi: 10.5120/333-504</strong>, 2010</li>
+                     <li>Mohanchur Sarkar, <strong>K.K.Shukla</strong> and K.S.Dasgupta:Network State Classification based on the Statistical Properties of RTT for an Adaptive Multi State Proactive Transport Protocol for Satellite based Networks” in the International Journal of Computer Networks and Communication (IJCNC), Vol.<strong>2</strong>, No.<strong>6</strong>, November, 2010, <strong>DOI : 10.5121/ijcnc.2010.2611</strong>, 2010.</li>
+                     <li>Mohanchur Sarkar, <strong>K.K.Shukla</strong> and K.S.Dasgupta: Performance Analysis of Proactive and Reactive Transport Protocols using a Proactive Congestion Avoidance Model. <em>International Journal of Computer Applications</em> <strong>6(5)</strong>:10–17, September 2010. Published By Foundation of Computer Science. <strong>Doi: 10.5120/1077-1407</strong>,2010.</li>
+                     <li>Mohanchur Sarkar, <strong>K.K.Shukla</strong> and K.S.Dasgupta, A Survey of Transport Protocols for Deep Space Communication Networks, International Journal of Computer Applications (0975 – 8887)Volume 31– No.8, October 2011, pp. 25 – 32, 2011.</li>
+                     <li>Bhaskar Biswas, Karan Jain, <strong>K.K. Shukla</strong>, Parallel web clustering using hybrid decomposition, Proceedings of the Third International Conference on Data Management at Institute of Management Technology, Pages 172-182,2010, ISBN : 0230-63637-3.</li>
+                     <li>Bhaskar Biswas, Karan Jain, Vipul Mittal and <strong>K.K. Shukla</strong>, Exploiting tree structure of a web page for clustering, Int. J. Knowledge and Web Intelligence, Vol. 1, Nos. 1/2, Page 81-94, 2009.</li>
+                     <li>Bhaskar Biswas, Karan Jain, <strong>K.K. Shukla</strong>, Efficient indexing of web pages using PR+ trees , Proceedings of the International Conference on Advances in Computing, Communication and Control,163-166, ISBN:<strong>978-1-60558-351-8</strong>, 2009.</li>
+                     <li>Neeraj Sharma, Amit K Ray, <strong>K. K. Shukla</strong>, "Segmentation and classification of Medical Images using Texture - Primitive Features" <em>Journal of Medical Physics</em>, vol. <strong>33</strong>, No. <strong>3</strong>, pp. <strong>119</strong> – <strong>126</strong>, 2008.</li>
+                     <li> Neeraj Sharma, Amit K Ray, <strong>K. K. Shukla</strong>, et al, "Segmentation of Medical Images using Simulated Annealing based Fuzzy c - means Algorithm, <em>International Journal of Biomedical Engineering and Technology</em>, (<strong>2008</strong>).</li>
+                     <li>Pranab K. Muhuri and <strong>K. K. Shukla</strong>, Real-Time Scheduling of Periodic Tasks with Processing Times and Deadlines as Parametric Fuzzy Numbers, Journal of Applied Soft Computing , Elsevier Science, Vol.<strong>9</strong>, No. <strong>3</strong>, pp. 936-946, 2009.</li>
+                     <li>Pranab K. Muhuri, <strong>K. K. Shukla</strong>, “Real-Time Task Scheduling with Fuzzy Uncertainty in Processing Times and Deadlines”, Journal of Applied Soft Computing, Elsevier Science, Vol. <strong>8</strong>, No. <strong>1</strong>, <em>pp. 1-13</em>, January <strong>2008</strong>.</li>
+                     <li>A. Singh, S. Barman, <strong>K. K. Shukla</strong>, “Secure Two-party Context Free Language Recognition”, ICDCIT 2005, Lecture Notes in Computer Science, Springer-Verlag (<strong>LNCS 3816</strong>), <strong>2005</strong> pp. 117-124</li>
+                     <li>Pranab K. Muhuri, <strong>K. K. Shukla</strong>, “Effect of Changes in Membership Functions on Fuzzy Real-Time Scheduling” Proceedings of the International Conference on Computer &amp; Industrial Management (ICIM 2005), Bangkok, Thailand.</li>
+                     <li>Pranab K. Muhuri, <strong>K. K. Shukla</strong>, “Scheduling Periodic Tasks with Parameterized Fuzzy Deadlines in Real-Time Systems” Proceedings of the 8th International Conference on Computer and Information Technology (ICCIT-2005), Dhaka, Bangladesh</li>
+                     <li>Pranab K. Muhuri, <strong>K. K. Shukla</strong>, “Periodic Scheduling of Real-Time Tasks with Parametrized Fuzzy Deadlines and Processing Times”, Proceedings International Conference on Computational &amp; Experimental Engineering and Sciences 2005 (ICCES’05), Indian Institute of Technology Madras, India, <strong>ISBN 0-9717880-0-6</strong>, pp. 653-658.</li>
+                     <li>A. K. Tiwari, <strong>K. K. Shukla</strong>, “Implementation of Generalised Cross Validation Based Image Denoising in Parallel Virtual Machine Environment” Digital Signal Processing, Elsevier Science, Vol. <strong>14</strong>, 2004 pp. 138-157</li>
+                     <li>Pinaki Roy Chowdary, <strong>K. K. Shukla</strong>, "Incorporating Fuzzy Concepts along with Dynamic Tunneling for Fast Robust Training of Multilayer Perceptrons", Neurocomputing, Elsevier Science, Jan. 2003, pp 319-340</li>
+                     <li>M. V. N. K. Prasad, V. N. Mishra, <strong>K. K. Shukla</strong>, “Space Partitioning Based Image Compression Using Quality Measures for Subdivision Decision” Applied Soft Computing, Vol. <strong>3</strong>, 2003 pp. 273-282.</li>
+                     <li>M. V. N. K. Prasad, <strong>K. K. Shukla</strong>," Image Compression Algorithm Using Delaunay Triangulation and Linear Interpolation", Proceedings of the Fifth International Conference on Advances in Pattern Recognition (ICAPR-2003), <strong>ISBN 81-7764-532</strong>, pp.295-298</li>
+                     <li>Arvind K.Tiwari, <strong>K. K. Shukla</strong>," Modified GCV Thresholded Image Denoising ", Proceedings of the Fifth International Conference on Advances in Pattern Recognition (ICAPR-2003), <strong>ISBN 81-7764-532</strong>, pp.183-187</li>
+                     <li>A. K. Tiwari, <strong>K. K. Shukla</strong>, "Generalized Cross Validation Based Image Denoising in Parallel Virtual Machine Environment", International Signal Processing Conference (ISPC 2003), Dallas, Texas, USA April 1-3, 2003.</li>
+                     <li>A. K. Tiwari, <strong>K. K. Shukla</strong> and S. Kierti "ANN-DWT Based Audio Signal Compression and Reconstruction", International Signal Processing Conference (ISPC 2003), Texas, USA April 1-3, 2003</li>
+                     <li>Pranab K. Muhuri, <strong>K.K. Shukla</strong>, "Recent Trends in real Time task Scheduling for Periodic Tasks", Proc. of International Conference on Information Technology (ITPC-03), May 2003, pp. 1-5</li>
+                     <li>P. Roy Chowdhury, <strong>K. K. Shukla</strong>, "On Generalization and K-Fold Cross Validation Performance of MLP Trained with EBPDT", AFSS2002, Proceedings of the International Conference on Fuzzy Systems, Calcutta, Feb 2002, <strong>ISBN 3-540-43150-0</strong>, pp. 352-359</li>
+                     <li>M. V. N. K. Prasad, <strong>K. K. Shukla</strong>, R. N. Mukherjee "Implementation of BTTC image compression Algorithm Using Fuzzy Technique", AFSS2002, Proceedings of the International Conference on Fuzzy Systems, Calcutta, Feb 2002, <strong>ISBN 3-540-43150-0</strong>, pp. 375-381</li>
+                     <li>A. K. Tiwari, <strong>K. K. Shukla</strong>, "Wavelet Transform Based Fuzzy Inference System for Power Quality Classification", AFSS2002, Proceedings of the International Conference on Fuzzy Systems, Calcutta, Feb 2002. <strong>ISBN 3-540-43150-0</strong>, pp. 148-157.</li>
+                     <li>A. K. Tiwari and <strong>K. K. Shukla</strong>, "Discrete Wavelet Transform based Power Quality Classification" IEEE Conference Energy Automation and Information Technology - EAIT 2001, pp. 130-133.</li>
+                     <li>M. V. N. K. Prasad, <strong>K. K. Shukla</strong>, "Tree Triangular Coding Image Compression Algorithms", International Journal of Image &amp; Graphics, Spl. Issue on Algorithms, Vol.1, No.<strong>4</strong>, 2001 pp. 591-603.</li>
+                     <li><strong>K. K. Shukla</strong>, "Genetically Trained Neural Classifiers", International on-line Internet Conference OSEE-2000.</li>
+                     <li><strong>K. K. Shukla</strong>, "Neuro-Genetic Prediction Of Software Development Effort", International Journal of Information and Software Technology (Elsevier), June 2000, 42/10, pp. 701-703.</li>
+                     <li>Srivastava A.K, Srivastava S.K, <strong>Shukla K.K</strong> ,"Genetic Evolution of Neural Network Based On A New Three-Parents Crossover Operator", Proceedings of IEEE International Conference ICIT-2000, IEEE Catalog No. 00TH8482, pp. 153-158, January 2000, Goa, India. <strong class="label label-success">INVITED PAPER</strong></li>
+                     <li>Srivastava A.K, Srivastava S.K, <strong>Shukla K.K</strong>,"On Design Issues Of Intelligent E-Nose System", Proc. IEEE Catalog No. 00TH8482, pp. 243-248. January 2000, Goa, India. [INVITED PAPER]</li>
+                     <li>Srivastava A.K, Srivastava S.K, <strong>Shukla K.K</strong>,"In Search Of A Good Neuro-Genetic Computational Paradigm", Proc. IEEE Catalog No. 00TH8482, pp. 497-502. January 2000, Goa, India. [INVITED PAPER]</li>
+                     <li>Srivastava A.K, Srivastava S.K, <strong>Shukla K.K</strong>,"Performance Evaluation of Hybrid Trained Neural Classifier for Detection of Hazardous Vapors", Proc. IEEE Catalog No. 00TH8482, pp. 656-661. January 2000, Goa, India <strong class="label label-success">INVITED PAPER</strong></li>
+                     <li><strong>K. K. Shukla</strong>, Raghunath, "An Efficient Global Algorithm For Supervised Training Of Neural Networks", International Journal of Computers and EE, PERGAMON Press, 25 (1999), pp. 195-218.</li>
+                     <li><strong>K. K. Shukla</strong>, A. Wahi, "Sensitivity Study of Cluster Discovery by ART-II Neural Network", Journal of The Institution of Engineers, Singapore, pp. 15-19, <strong>ISSN 0377-7464</strong>, vol. 39, no. 1, 1999.</li>
+                     <li>R. R. Das, <strong>K. K. Shukla</strong>, R. Dwivedi, A. R. Srivastava, "Discrimination Of Individual Gas/Odor Using Responses Of Integrated Thick Film Tin Oxide Sensor Array and Fuzzy - Neuro Concept", International Microelectronics Journal, Elsevier Science, pp. 793-800, 30 (1999).</li>
+                     <li><strong>K. K. Shukla</strong>, R. N. Mukherjee et al, "On Some New improved Algorithms For Digital Watermarking", Proc. Fourth International Conference on Advances in Pattern Recognition and Digital Techniques, ISBN 81-73190347-9, pp. 297-301,December 1999, Calcutta, India.</li>
+                     <li>A. K. Srivastava, <strong>K. K. Shukla</strong>, S. K. Srivastava, "Application of Genetically Trained neural Network with Scheduled Mutation to Intelligent Gas Sensor", Proc. Fourth International Conference on Advances in Pattern Recognition and Digital Techniques, ISBN 81-73190347-9, pp. 326-330, December 1999, Calcutta, India.</li>
+                     <li><strong>K. K. Shukla</strong>, Arvind Sachdeva, "Fingerprint Classification Using Evolutionary Neural Networks", 5th International Conference On Cognitive Systems, New Delhi, India, December 1999.</li>
+                     <li><strong>K. K. Shukla</strong>, R. R. Das, R. Dwivedi, "Gas/Odor Identification Using Adaptive Resonance Theory Neural Network", International Journal Of Sensors and Actuators B,(Elsevier), vol. 50 (1998), pp. 194-203.</li>
+                     <li>A. K. Srivastava, <strong>K. K. Shukla</strong>, S. K. Srivastava, "Exploring Neuro-Genetic Processing Of Electronic Nose Data", International Microelectronics Journal (UK), vol. 29 (1998), pp. 921-931.</li>
+                     <li>Wahi A., <strong>Shukla K. K.</strong>, Jha R. K., "Fuzzy Neural Approach To Dielectric Classification Using Microwave-Bench Data", International Conference On Mathematical Analysis With Applications To Industrial Problems, BHU, India, March 1998.</li>
+                     <li><strong>K. K. Shukla</strong>, A. Wahi, "Object Oriented Design Of A Neurocomputing Research Workbench", Proceedings International Conference on Cognetive Systems, December 1998, New Delhi, India, pp. 10-23.</li>
+                     <li><strong>Shukla K. K.</strong>, "A CASE Tool For Class Dictionary Graph Design", Proceedings of the International Conference On Software Engineering and Its Applications, Hyderabad, India, pp. 208-218, December 1997</li>
+                     <li><strong>Shukla K. K.</strong>, "A Neurocomputer Based Learning Controller for Critical Industrial Applications", IEEE International Conference on Industrial Automation and Control, Hyderabad, India, January 1995, 0-7803-2081-6/95, pp. 43-48.</li>
+                     <li><strong>Shukla K. K.</strong>, "Knowledge Representation and Inference in Computational Neural Networks", Proceedings of the International Conference on Automation, Indore, ISBN 81-7023-512-X, pp. 151-154, December, 1995.</li>
+                     <li><strong>Shukla K. K.</strong>, Raghunath, "Expert System Implementation on Neural Network Architecture", Proceedings of the International Conference on Information Technology, B.H.U., India, December 1991, ISBN-81-85070-24-8, pp. 89 - 98</li>
+                     <li>Mishra R. B., <strong>Shukla K. K.</strong>, "A DSS for Hospital Information System using Decision Tables", International Conference on Information Technology, B.H.U., India, December 1991.</li>
+                  </ul>
+				  </div>
+                  <hr class="star-primary" id="national-publications">
+				   <div class="container lead" style="margin-top:40px">
+                  <h2>NATIONAL PUBLICATIONS </h2>
+                  <ul>
+                     <li>Madhushi Verma, <strong>K.K.Shukla</strong>, Sensitivity of Greedy TSP Approximation Algorithm to the Choice of MST Root”, National Conference on Mathematical Modeling and Computer Simulation, BHU, March, 2012.</li>
+                     <li>Bharavi Mishra, <strong>K.K. Shukla</strong>., Investigating the Impact of Sampling Methods on Software Defect Prediction Ability of Attributes, National Conference on Artificial Intelligence and Agents: Theory &amp; Applications December 2011, IIT-BHU, Varanasi.</li>
+                     <li>Mousumi Dhara, <strong>K.K.Shukla</strong> and Neeraj Sharma, “Efficiency Test of Graph Clustering Algorithms: Markov Clustering and Weighted Graph Cuts without Eigenvectors”, National Conference on Artificial Intelligence and Agents Theory &amp; Applications , Proceedings of AIATA conference, pp. 202-207, December 2011.</li>
+                     <li>Mousumi Dhara, <strong>K.K.Shukla</strong> and Neeraj Sharma, “Experimental Study of Graph Clustering Algorithm: Weighted Graph Cuts without Eigenvectors”, National Conference on Artificial Intelligence and Agents Theory &amp; Applications, Proceedings of AIATA conference, pp. 214-219, December 2011.</li>
+                     <li>Mousumi Dhara and <strong>K.K.Shukla</strong>, “Active Comparison of Graph Clustering Algorithms using the K-clique Percolation Technique”, National Conference on Bayesian Statistics and its Emerging Applications (BSEA), DST-Centre for Interdisciplinary Mathematical Research,BHU,  pp. 52, December 2011.</li>
+                     <li>P. K. Muhuri, <strong>K. K. Shukla</strong>, “ Energy Efficient Scheduling for Real Time Periodic Tasks with Fuzzy Uncertainty in Task Deadlines”, National Conference on Mathematical Techniques: Emerging Paradigms for Electronics and IT Industries, (MATE IT 2006), New Delhi.</li>
+                     <li>B. Biswas, <strong>K. K. Shukla</strong>, “ A Study of Two Different Web Page Clustering Techniques”, National Conference on Mathematical Techniques: Emerging Paradigms for Electronics and IT Industries, (MATE IT 2006), New Delhi.</li>
+                     <li>P. K. Muhuri, <strong>K. K. Shukla</strong>,“ Task Scheduling in Fuzzy Real-Time Systems: A Review of Latest Developments”, National Conference on Recent Trends in Computer Networking and Communications (RTCNC 2006), India</li>
+                     <li>B. Biswas, <strong>K. K. Shukla</strong>,“ Study of Some Factors in Webpage Clustering Techniques”, National Conference on Recent Trends in Computer Networking and Communications (RTCNC 2006), India</li>
+                     <li>Pranab K. Muhuri and <strong>K. K. Shukla</strong> , “ Exploiting Asymmetry In Membership Functions To Model Task Importance in Fuzzy Real-Time Task Scheduling”, National Conference On Optimization Techniques And Their Applications, Department of Mathematics, Banaras Hindu University, January 20-22, 2004.</li>
+                     <li>B.Biswas and <strong>K. K. Shukla</strong>, “ Review Of Some Metrics Useful In Web Mining”, National Conference On Optimization Techniques And Their Applications, Department of Mathematics, Banaras Hindu University, January 20-22, 2004.</li>
+                     <li>S. N. Pandey, N. G. Dongre, <strong>K. K. Shukla</strong>, " Comparative Linguistics in Machine Translation", Symposium on Translation Support Systems, STRANS 2002, Indian Institute of Technology, Kanpur.</li>
+                     <li>M. V. N. K. Prasad, V.N. Mishra, <strong>K. K. Shukla</strong>, " Implementation of BTTC Image Compression Algorithm on Parallel Virtual Machine (PVM)", Journal of Computer Society of India, Vol. <strong>32</strong>, No. <strong>3</strong>, March 2002, pp 31-38.</li>
+                     <li>Arvind K. Tiwari and <strong>K. K. Shukla</strong>, " A Comparative Study of Fuzzy Inferencing Systems in Feature Extraction Using DWT for Power Quality Detection and Classification", Proceedings of Fuzzy Set Theory and its Mathematical Aspects and Applications, pp 220-227, <strong>ISBN 81-7764-389-4</strong>,December 2002, pp. 220-227.</li>
+                     <li>Arvind K Tiwari, <strong>K. K. Shukla</strong>," Signal Processing Techniques Using Wavelet Transform", Proceedings of Symposium on Advances In Electronics, ELECTRO 2001, January 2001, pp. 282-288.</li>
+                     <li>A. Wahi, <strong>K. K. Shukla</strong>, " A New Fuzzy Pattern Classification Technique Using Unsupervised and Supervised Training, Proceedings of Symposium on Advances In Electronics, ELECTRO 2001, January 2001, pp. 432-436.</li>
+                     <li><strong>K. K. Shukla</strong>, " Solution of Hard Problems Using Genetic Algorithms" National Workshop on AI Application in Power Quality, BHU, March 2001. <strong class="label label-success"> invited paper </strong></li>
+                     <li>M. K. Jha, <strong>K. K. Shukla</strong>, " AI based Routing Techniques For Communication Networks", Proceedings of Symposium on Advances In Electronics, ELECTRO 2001, January 2001, pp. 17-21.</li>
+                     <li>M. V. N. K. Prasad, <strong>K. K. Shukla</strong>, " Implementation of BTTC Image Compression Algorithm on SIMD Computers", <strong>IEEE ACE</strong>-2001, New Delhi, Nov. 2001, pp. 127-130.</li>
+                     <li>Arvind K. Tiwari, <strong>K. K. Shukla</strong>, "Efficient Signal Representation Using Discrete Wavelet Transform Thresholding", <strong>IEEE ACE</strong>-2001, New Delhi, Nov. 2001, pp. 57-59.</li>
+                     <li><strong>K. K. Shukla</strong>, Vikram Sharma, " Performance Evaluation of Genetic Algorithms with Fuzzy Crossover Operators on Deceptive Functions", National Seminar on Applied Systems Engineering and Soft Computing, SASESC-2000, DEI, Agra.</li>
+                     <li><strong>K. K. Shukla</strong>, " AI Can Avert The Software Crisis", National Conference on Intelligent Computing And Software Engineering, March 2000, BHU. <strong class="label label-success">INVITED PAPER</strong></li>
+                     <li><strong>K. K. Shukla</strong>, A. Wahi, " Some Issues in Designing Fuzzy Neural Associative Memories", Proc. 23rd National Systems Conference, pp. 258-263, <strong>ISBN 81-7023-996-6</strong>, December 1999, B.H.U.</li>
+                     <li><strong>K. K. Shukla</strong>, P. Mukherjee, " Experimental Evaluation of Moment Based Object Matching Algorithm", Proc. 23rd National Systems Conference, pp. 235-239, <strong>ISBN 81-7023-996-6</strong>, December 1999, B.H.U.</li>
+                     <li>A. K. Srivastava, <strong>K. K. Shukla</strong>, S. K. Srivastava, " A Programmable Data Acquisition System for Characterization of Gas Sensor Array", Proc. 23rd National Systems Conference, pp. 248-252, <strong>ISBN 81-7023-996-6</strong>, December 1999, B.H.U.</li>
+                     <li><strong>K. K. Shukla</strong>, " Computer Assisted ECG Analysis Using Neural Network Inference", Journal of The Institute of Engineers (India),vol. <strong>80</strong>, June 1999, pp. 1-8. <strong class="label label-success">COMPUTER ENGINEERING DIVISION MEDAL</strong></li>
+                     <li>A. Wahi, D. Venkatesh, <strong>K. K. Shukla</strong>, " A New Evolutionary Fuzzy Clustering Algorithm", UGC National Seminar on Emerging Trends In Electronics And Computers, RML Univ., Faizabad, p. 27, March 11-12, 1999.</li>
+                     <li>A. K. Shrivastav, <strong>K. K. Shukla</strong>, S. K. Shrivastava, " Neuro-Genetic Techniques in Electronic Nose Data Processing, UGC National Seminar on Emerging Trends In Electronics And Computers, RMLA Univ., Faizabad, <strong>CP/C-01</strong>,p. 26-27, March 11-12, 1999.</li>
+                     <li><strong>K. K. Shukla</strong>, A. Wahi, " A New Evolutionary Approach To Template Matching For Object Recognition", National Seminar on DSP and Machine Vision, J. K. Institute, Allahabad, March, 1999.</li>
+                     <li><strong>K. K. Shukla</strong>, N. S. Gokul et al, " An Evolutionary Computing Algorithm Using Autonomous Agents For Feature Extraction From Ultrasound Images", National Seminar on DSP and Machine Vision, J. K. Institute, Allahabad, March 1999.</li>
+                     <li>A. K. Srivastava, S. K. Srivastava, <strong>K. K. Shukla</strong>, " Weight Sensitivity of Genetically Trained Neural Network in Gas Identification Problem", National Seminar On Artificial Neural Networks &amp; Cognitive Systems(ANCS-98) DoE and Natl. Naval &amp; Oceanographic Lab, Cochin,<strong>S-III B</strong>-Applications-<strong>2/B-6</strong>, September 1998.</li>
+                     <li><strong>Shukla K. K.</strong>, Wahi A., " Some Issues In Control Software Development", National Seminar on Software Engineering, Vallabh Vidyanagar, June 1997.</li>
+                     <li><strong>Shukla K. K.</strong>, A. Wahi, " Some Issues In Designing Fuzzy Associative Memories", Third National Seminar On Neural Networks And Fuzzy Systems, Madras, July 1997.</li>
+                     <li>A.K.Srivastava, <strong>K. K. Shukla</strong>, S. K. Srivastava, " Performance Evaluation Of A Neural Classifier Of Electronic Nose Data Under Noisy Conditions", Third National Seminar On Neural Networks And Fuzzy Systems,(NCNNFS '97), Anna University, Madras, July 1997.</li>
+                     <li>A. K. Shrivastav, <strong>K. K. Shukla</strong>, and S. K. Shrivastav, " Pattern Recognition (PARC) Techniques in Multi-sensor Array Processing for Gas Discrimination", Proceedings Fourth National Seminar on Physics and Technology of Sensors, February 1997, Anand, pp. C-50-1 - 6.</li>
+                     <li><strong>Shukla K. K</strong>., " The Object Model and Its Application to Object Oriented Knowledgebase for Pictorial Information", National Seminar on Software Engineering, Vallabh Vidyanagar, June 1997. [<strong>INVITED PAPER</strong>]</li>
+                     <li><strong>Shukla K. K.</strong>," AI Techniques In Autonomous Control Systems", CSI Communications, <strong>ISSN 0970-647X</strong>, pp. 18-20, June 1997.</li>
+                     <li><strong>Shukla K. K.</strong>, " Edge Detection Using Genetically Trained Fuzzy Neural Network", Proceedings National Conference on Neural Networks And Fuzzy Systems, Anna University, July 1997, pp. 222-227.</li>
+                     <li><strong>Shukla K. K.</strong>, " Some Techniques for Information Retrieval over the INTERNET", CSI Communications, Special Issue on INTERNET, October 1996 , pp. 15-17, <strong>ISSN 0970-647X</strong>.</li>
+                     <li><strong>Shukla K. K.</strong>, " Some Experiences in Development of Object Oriented Databases", Proceedings of the National Conference on Software Engineering and Its Applications, Aug. 23-25, 1996, Hyderabad, pp. 86-95.</li>
+                     <li><strong>Shukla K. K.</strong>, " Some AI Techniques for Information Retrieval", DESIDOC Bulletin of Information Technology, vol. <strong>16</strong>, No. <strong>4</strong>, July 1996, pp. 13-18, <strong>ISSN 0971-4383</strong>.</li>
+                     <li><strong>Shukla K. K.</strong>, A. Wahi, " Implementation of Distributed AI Systems Using Fuzzy Neurons", National Seminar on Bayesian Statistics, B.H.U., Varanasi, April 1996.</li>
+                     <li><strong>Shukla K. K.</strong>," Object Oriented Composition Techniques for Multimedia Applications", Communications of the Computer Society of India, vol. <strong>19</strong>, No. <strong>10</strong>, <strong>ISSN 0970-647X</strong>, April 1996, pp. 4-7.</li>
+                     <li><strong>Shukla K. K</strong>., "Diagnostic Strategies for Multiprocessor Systems," CSI Communications, vol. <strong>18</strong>, No. <strong>8</strong>, February 1995, pp. 9-12.</li>
+                     <li><strong>Shukla K. K.</strong>, "Synthesis of Digital Control System for Aerospace Applications" Proceedings of the 18th National Systems Conference, Agra , India, , pp. 331-335, January 1995.</li>
+                     <li><strong>Shukla K. K.</strong>, " Theoretical Foundations of Genetic Algorithms", Proc. INSA / CSI Symposium on Genetic Algorithms, Dehradun, March 1995, <strong>ISBN-81-211-0118-2</strong>, pp. 23-28.</li>
+                     <li><strong>Shukla K. K.</strong>, " Learning of Movements in Robotic Manipulators using Artificial Neural Networks", CSI Journal of Computer Science and Informatics, Special Issue on Robotics and Automation, <strong>ISSN 0254 - 7813</strong>, vol. 25, No. 1, March 1995, pp. 53-66.</li>
+                     <li><strong>Shukla K. K</strong>., "Some Parallel Processing Techniques for Graphics Applications", CSI Communications, <strong>ISSN 0970-647X</strong>, vol. <strong>18</strong>, No. <strong>10</strong>, April 1995, pp. 29-32.</li>
+                     <li><strong>Shukla K. K.</strong>," Identification of Nonlinear Dynamic Systems Using Neural Networks", Proceedings of the 19th National Systems Conference, Coimbatore, December, 1995, <strong>ISBN 81-7023-513-8</strong>, PP. 228-232.</li>
+                     <li><strong>Shukla K. K.</strong>, " Fault Tolerant Design of Artificial Neural Systems", First Conference on Fault-Tolerant Systems, Madras, 1995.</li>
+                     <li><strong>Shukla K. K.</strong>, " Some Design Issues for Hardware Implementation of Neural Networks", CSI Communications, <strong>ISSN 0970 - 647X</strong>, vol. <strong>19</strong>, No. <strong>2</strong>, August 1995, pp. 24-26.</li>
+                     <li><strong>Shukla K. K.</strong>," Digital Implementation of Artificial Neural Networks: A Comparative Study", 30th Anual Convention of Computer Society of India CSI-95, Hyderabad, 1995.</li>
+                     <li>S. P. Sisodia, <strong>K. K. Shukla</strong>, " Hardware Fault Diagnosis by Neural Processing of Compressed Test Responses", FTS-95, Madras, 1995.</li>
+                     <li><strong>Shukla K. K.</strong>, " File Formats and I/O Techniques for Multimedia Applications", 10th National Convention of Computer Engineers, The Institutions of Engineers (India), Lucknow, Nov.1995,pp.11.</li>
+                     <li><strong>Shukla K. K.</strong>, " Some Artificial Intelligence Techniques for Engineering Education", The Indian Journal of Technical Education, vol. <strong>18</strong>, No. <strong>4</strong>, <strong>ISSN 0971-3034</strong>, December 1995, pp. 32-34.</li>
+                     <li><strong>Shukla K. K.</strong>, A. Wahi, " Performance Evaluation of Self-Organizing Neural Network for Cluster Discovery", CSI Communications, vol. <strong>19</strong>, No. <strong>6</strong>, December 1995, pp. 6-9. <strong class="label label-success">CSI BEST PAPER AWARD</strong> </li>
+                     <li><strong>Shukla K. K.</strong>, " Design of Intelligent Computer Aided Instruction Systems", National Seminar on Engineering Education in the 21st Century, B.H.U., Varanasi, January 1995.</li>
+                     <li><strong>Shukla K. K</strong>., " An Eye Position Tracker for Futuristic User Interfaces", CSI Communications, <strong>ISSN 0970-747X</strong>, vol. <strong>18</strong>, No. <strong>2</strong>, August 1994, pp. 15-16.</li>
+                     <li><strong>Shukla K. K</strong>., Sisodia S. P., " A Parallel Computer Architecture for 3-D Animation," National Workshop on Computer Aided Design and Manufacture, Sultanpur, India, January 1993.</li>
+                     <li><strong>Shukla K. K.</strong>, Sisodia S. P.,  " A Unified Artificial Intelligence Based CAD Methodology for the Design of Complex Systems", National Workshop on Computer Aided Design and Manufacture, Sultanpur, India, January 1993.</li>
+                     <li><strong>Shukla K. K</strong>.,  " Software Development Methodology for High Integrity Computing Systems in Defense Applications", <strong>IEEE National Seminar on Software Engineering</strong>, Trivendrum, India, December 1993.</li>
+                     <li><strong>Shukla K. K.</strong>,  " Installation of Modern Control System to Monitor and Control Process Parameters", National Seminar of Indian Institution of Plant Engineers, Lucknow, March 1989.</li>
+                     <li><strong>Shukla K. K</strong>., " LCA FADEC CPU Testing - Test Software and Test Results", HAL Technical Report.(1989)</li>
+                     <li><strong>Shukla K. K.</strong>, " Control Laws Synthesis for LCA FADEC", HAL Technical Report.(1986)</li>
+                     <li><strong>Shukla K. K.</strong>, " Implementing RS232c Serial Communication Link Between Tektronix 8002A MDS and MF 68K", HAL Technical Report.(1985)</li>
+                     <li><strong>Shukla K. K.</strong>, " Design of a Low Pass Digital Filter for Use in DFM System," HAL Technical Report.(1985)</li>
+                     <li><strong>Shukla K. K</strong>., " Development of Microprocessor Based Experimental Heliostat Control System", HAL Technical Report, (1984)</li>
+                  </ul>
+				  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Sponsored Projects Section -->
+      <section name="sponsored-projects" id="sponsored-projects">
+         <div class="container lead">
+            <div style="text-align: left; margin-top:10px" class="col-md-12">
+               <b class="noshow" style="display:none;" id="tab-4">
+               <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-sponsored-projects-content').toggle();">Introduction <span class="glyphicon glyphicon-chevron-down"></span></button>
+               </b>
+               <div class="allshow" style="display:none;" id="tab-sponsored-projects-content" class="table-responsive">
+                  <hr class="star-primary">
+                  <h2>SPONSORED PROJECTS </h2>
+                  <table class="table table-bordered table-hover">
+                     <tbody>
+                        <tr>
+                           <td><strong>YEAR</strong></td>
+                           <td><strong>PROJECT</strong></td>
+                           <td><strong>SPONSORING AGENCY</strong></td>
+                        </tr>
+                        <tr>
+                           <td>Nov 82 - Nov 83</td>
+                           <td>Software Development and Validation for Strapdown Inertial Navigation System for Indian Military Aircraft.</td>
+                           <td>Aircraft Aeronautical Research &amp; Development Board<br>
+                              (ARDB)
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>Dec 83 - Nov 85</td>
+                           <td>Software Development and Field Testing of Heliostat Control System for Solar Energy Utilization.</td>
+                           <td>
+                              HAL
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>Dec 85 - Aug 86</td>
+                           <td>Deputed to SMITHS AEROSPACE, U.K. on project - Full Authority Digital Engine Control for Light Combat Aircraft (LCA).</td>
+                           <td>Aeronautical Development Agency (ADA)</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              Sep 86 - July 87
+                           </td>
+                           <td>Hardware/Software Integration and digital filter software for Digital Fuel Management System for Advanced Light Helicopter (ALH) of Indian Air Force.</td>
+                           <td>Helicopter Design Bureau, Banagalore</td>
+                        </tr>
+                        <tr>
+                           <td>Aug 87 - Jan 88</td>
+                           <td>Graphics Kernel System Routines for Flight Data Display</td>
+                           <td>HAL</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              Feb 88 - Mar 88
+                           </td>
+                           <td>On deputation to SMITHS AEROSPACE, U.K. on the project - System Integration of Dual Redundant 68000 + 8097 based FADEC system for LCA.</td>
+                           <td>
+                              Aeronautical Development Agency (ADA).
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>Apr 88 - Mar 89</td>
+                           <td>Lab Demonstrator for GET_U_HOME panel using 80286 + 80287.</td>
+                           <td>HAL</td>
+                        </tr>
+                        <tr>
+                           <td>Apr 89 - Jun 90</td>
+                           <td>FADEC CPU testing and software validation for ground trials of LCA.</td>
+                           <td>HAL + Smiths Aerospace U.K. Joint R &amp; D venture</td>
+                        </tr>
+                        <tr>
+                           <td>Apr 95 - Mar 98</td>
+                           <td>INTEGRATED COMPUTER AIDED DIAGNOSIS PROJECT</td>
+                           <td>
+                              <p>AICTE Thrust Area Scheme.</p>
+                              <p>(Rs. 7.70 lacs)</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>Mar 99- Mar 01</td>
+                           <td>Neural Network Application To Machine Vision</td>
+                           <td>
+                              <p>AICTE Thrust Area Scheme</p>
+                              <p>(Rs. 10.00 lacs)</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>Mar 02 - 05</td>
+                           <td>Malaviya Center for Information Technology Localization (CoIL Net)</td>
+                           <td>
+                              <p>Dept. of Information Technology, Ministry of Communication &amp; Information Technology project</p>
+                              <p>(Rs. 1 Crore)</p>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Sponsored Projects Section -->
+      <section name="research-guidance" id="research-guidance">
+         <div class="container lead">
+            <div style="text-align: left; margin-top:10px" class="col-md-12">
+               <b class="noshow" style="display:none;" id="tab-5">
+               <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-research-guidance-content').toggle();">Introduction <span class="glyphicon glyphicon-chevron-down"></span></button>
+               </b>
+               <div class="allshow" style="display:none;" id="tab-research-guidance-content" class="table-responsive">
+                  <hr class="star-primary">
+                  <h2>RESEARCH GUIDANCE </h2>
+                  <table class="table table-bordered table-hover">
+                     <tbody>
+                        <tr>
+                           <td><strong>S.N.</strong></td>
+                           <td ><strong>Name</strong></td>
+                           <td ><strong>Title of the PhD Thesis&nbsp;</strong></td>
+                           <td ><strong>Status</strong></td>
+                        </tr>
+                        <tr>
+                           <td>1.</td>
+                           <td>Dr. Amitabh Wahi</td>
+                           <td>
+                              <p>Neural Network and Fuzzy Logic Applications in Some Classification Problems</p>
+                           </td>
+                           <td>
+                              <p>AWARDED</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>2.</td>
+                           <td>Dr. Arvind Shrivastava</td>
+                           <td>
+                              <p>Application of Artificial Neural Network in Gas/ Odor Identification Using Sensor Array</p>
+                           </td>
+                           <td>
+                              <p>AWARDED</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>3.</td>
+                           <td>Dr. S. P. Sisodia</td>
+                           <td>
+                              <p>Neural Network Techniques with a Special Reference to Digital System Testing</p>
+                           </td>
+                           <td>
+                              <p>AWARDED</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>4.</td>
+                           <td>Dr. P. K. Singh</td>
+                           <td>
+                              <p>Intelligent Heating Schedule Controller for SC Furnace (ISM)</p>
+                           </td>
+                           <td>
+                              <p>AWARDED</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>5.</td>
+                           <td>Dr. B. R. K. Rao</td>
+                           <td>
+                              <p>On New Learning Techniques in Radial Basis Function Neural Networks and Their Applications.</p>
+                           </td>
+                           <td>
+                              <p>AWARDED</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>6.</td>
+                           <td>Dr. P. Roychowdhury</td>
+                           <td>
+                              <p>New Tunneling Based Learning Algorithms For Neural Nets</p>
+                           </td>
+                           <td>
+                              <p>AWARDED</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>7.</td>
+                           <td>Dr. Arvind Kumar Tiwari</td>
+                           <td>
+                              <p>New Implementation Techniques of DWT and Their Application to Signal De-noising &amp; Classification</p>
+                           </td>
+                           <td>
+                              <p>AWARDED</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>8.</td>
+                           <td>Dr. M.V.N.K.Prasad</td>
+                           <td>
+                              <p>Domain Decomposition Based Image Compression</p>
+                           </td>
+                           <td>
+                              <p>AWARDED</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>9.</td>
+                           <td>Dr. R. R. Das</td>
+                           <td>
+                              <p>Neuro-Fuzzy Classifiers for Identification of Gases / Odours</p>
+                           </td>
+                           <td>
+                              <p>AWARDED</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>10.</td>
+                           <td>Dr. Pranab Kumar Muhuri</td>
+                           <td>
+                              <p>Task Scheduling in Real-Time Systems with Fuzzy Uncertainty in Deadlines and Processing Times</p>
+                           </td>
+                           <td>
+                              <p>AWARDED</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>11.</td>
+                           <td>Dr. Neeraj Sharma</td>
+                           <td>
+                              <p>Segmention in Biomedial Images</p>
+                           </td>
+                           <td>
+                              <p>AWARDED</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>12.</td>
+                           <td>Dr. Sandeep Agarwal</td>
+                           <td>
+                              <p>Adaptive Scheduling Algorithms for Overloaded Real Time Systems</p>
+                           </td>
+                           <td>
+                              <p>AWARDED</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>13.</td>
+                           <td>Dr. Bhaskar Biswas</td>
+                           <td>
+                              <p>New Algorithms for Mining Web pages based on their Content and Structure</p>
+                           </td>
+                           <td>
+                              <p>AWARDED</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>14.</td>
+                           <td>Dr. Abhigyan Dwivedi</td>
+                           <td>
+                              <p>Nominal Phrase in Sanskrit and English - A Machine Translation Approach</p>
+                           </td>
+                           <td>
+                              <p>AWARDED</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>15.</td>
+                           <td>Dr. Mohanchur Sarkar</td>
+                           <td>
+                              <p>Performance Enhancement Algorithms for Satellite Interactive Network</p>
+                           </td>
+                           <td>
+                              <p>AWARDED</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>16.</td>
+                           <td>Dr. Bharavi Mishra</td>
+                           <td>
+                              <p>Developing Software Defect Prediction Models by Mining Historical Data Sets</p>
+                           </td>
+                           <td>
+                              <p>AWARDED</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>17.</td>
+                           <td>Dr. (Ms.) Mousumi Dhara</td>
+                           <td>
+                              <p>New Approaches to Graph Clustering and Overlapping Community Detection with Applications</p>
+                           </td>
+                           <td>
+                              <p>AWARDED</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>18.</td>
+                           <td>Dr.(Ms.) Madhushi Verma</td>
+                           <td>
+                              <p>Fuzzy Models and Heuristic Algorithms for a Class of Graph Problems</p>
+                           </td>
+                           <td>
+                              <p>AWARDED</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>19.</td>
+                           <td>Dr. Jayadeep&nbsp;Pati</td>
+                           <td>
+                              <p>Analysis of Temporal Patterns across Software Versions using Time Series Models</p>
+                           </td>
+                           <td>
+                              <p>AWARDED</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>20.</td>
+                           <td>Dr.(Ms.) Mridula Verma</td>
+                           <td>
+                              <p>New Accelerated First-order Machine Learning Algorithms using Convex Optimization.</p>
+                           </td>
+                           <td>
+                              <p>AWARDED</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>21.</td>
+                           <td>Dr. (Ms.) Manisha Singla</td>
+                           <td>Robust SVM Variants and Their Applications</td>
+                           <td>AWARDED</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section name="administration" id="administration">
+         <div class="container lead">
+            <div style="text-align: left; margin-top:10px" class="col-md-12">
+               <!--<h2>Welcome!</h2>-->
+               <b class="noshow" style="display:none;" id="tab-6">
+               <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-administration-content').toggle();">Introduction <span class="glyphicon glyphicon-chevron-down"></span></button>
+               </b>
+               <div class="allshow" style="display:none;" id="tab-administration-content">
+                  <hr class="star-primary">
+                  <h2>ADMINISTRATION </h2>
+                  <p><strong>Dean </strong>(Faculty Affairs), I.I.T. (B.H.U)&nbsp;&nbsp;01.12.2017- 06.05.2020<br><strong>Professor In-charge</strong> (Faculty Affairs), I.I.T. (B.H.U)&nbsp; (26.05.2017-30.11.2017)<br><strong>Chairman&nbsp; &nbsp;&nbsp;</strong>National Supercomputing mission, IIT BHU Node&nbsp;<br><strong>Head&nbsp;</strong>&nbsp;Department of Computer Science and Engineering, IIT BHU&nbsp;(2002 - 2005), (2014-2017): 6 Years<br><strong>R &amp; D Project supervision</strong> at HAL. (1982 - 1990) Fighter Aircraft Avionics and Digital Control Systems.<br><strong>Lab In-charge</strong>&nbsp;Visual Computing &amp; AI Labs.&nbsp;Set up these labs from scratch. (1991 - 2007)<br>
+                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Presently, Lab In-charge, Network Security Lab.<br><strong>Administrative Warden</strong>, Vivekanand Hostel (1990 - 1996).&nbsp;
+                  </p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section name="awards" id="awards">
+         <div class="container lead">
+            <div style="text-align: left; margin-top:10px" class="col-md-12">
+               <!--<h2>Welcome!</h2>-->
+               <b class="noshow" style="display:none;" id="tab-6">
+               <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-awards-content').toggle();">Introduction <span class="glyphicon glyphicon-chevron-down"></span></button>
+               </b>
+               <div class="allshow" style="display:none;" id="tab-awards-content" class="table-responsive">
+                  <hr class="star-primary">
+                  <h2>AWARDS </h2>
+                  <table  class="table table-bordered table-hover">
+                     <tbody>
+                        <tr>
+                           <td>i.</td>
+                           <td>Entry in Marquis Who is Who in the World</td>
+                        </tr>
+                        <tr>
+                           <td>ii.</td>
+                           <td>B.H.U. Gold Medal in M.Tech. Control Systems</td>
+                        </tr>
+                        <tr>
+                           <td>iii.</td>
+                           <td>FIRST RANK in B. E. throughout the five - year course</td>
+                        </tr>
+                        <tr>
+                           <td>iv.</td>
+                           <td>MERIT CERTIFICATE in Higher Secondary</td>
+                        </tr>
+                        <tr>
+                           <td>v.</td>
+                           <td>APPRECIATION LETTER from Research Designs &amp; Standards Organization (RDSO), Ministry of Railways for saving foreign exchange by troubleshooting and commissioning the Rail Imaging Computer System.</td>
+                        </tr>
+                        <tr>
+                           <td>vi.</td>
+                           <td>BEST PAPER AWARD by Computer Society of India.</td>
+                        </tr>
+                        <tr>
+                           <td>vii.</td>
+                           <td>Computer Engineering Division MEDAL from the Institution of Engineers (India)</td>
+                        </tr>
+                        <tr>
+                           <td>viii.</td>
+                           <td>IBM campus mentoring award</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+      </section>
+      <hr class="star-primary">
+   </body>
 </html>
-
